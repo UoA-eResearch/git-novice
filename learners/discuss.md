@@ -22,7 +22,7 @@ $ cat ~/.gitconfig
 
 ```output
 [user]
-	name = Alfredo Linguini
+	name = Sarah Linguini
 	email = a.linguini@ratatouille.fr
 [color]
 	ui = true
@@ -131,7 +131,7 @@ This has various impacts on Git's performance and will make it difficult to
 compare different versions of your project.
 
 For a basic example to show the difference it makes,
-we're going to go see what would have happened if Alfredo had tried
+we're going to go see what would have happened if Sarah had tried
 using outputs from a word processor instead of plain text.
 
 Create a new directory and go into it:
@@ -158,7 +158,7 @@ $ git add guacamole.doc
 $ git commit -m "Create a template for recipe"
 ```
 
-Then make the same changes to `guacamole.doc` that we (or Alfredo) previously made to `guacamole.md`.
+Then make the same changes to `guacamole.doc` that we (or Sarah) previously made to `guacamole.md`.
 
 ```output
 # Ingredients
