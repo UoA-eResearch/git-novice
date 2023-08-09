@@ -101,7 +101,7 @@ $ git show HEAD~2 guacamole.md
 
 ```output
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Create a template for recipe
