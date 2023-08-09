@@ -27,14 +27,14 @@ of configurations we will set as we get started with Git:
 
 On a command line, Git commands are written as `git verb options`,
 where `verb` is what we actually want to do and `options` is additional optional information which may be needed for the `verb`. So here is how
-Alfredo sets up his new laptop:
+Sarah sets up her new laptop:
 
 ```bash
-$ git config --global user.name "Alfredo Linguini"
-$ git config --global user.email "a.linguini@ratatouille.fr"
+$ git config --global user.name "Sarah Robertson"
+$ git config --global user.email "s.robertson@researcher.co"
 ```
 
-Please use your own name and email address instead of Alfredo's. This user name and email will be associated with your subsequent Git activity,
+Please use your own name and email address instead of Sarah's. This user name and email will be associated with your subsequent Git activity,
 which means that any changes pushed to
 [GitHub](https://github.com/),
 [BitBucket](https://bitbucket.org/),
@@ -84,7 +84,7 @@ $ git config --global core.autocrlf true
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Alfredo also has to set his favorite text editor, following this table:
+Sarah also has to set her favorite text editor, following this table:
 
 | Editor                                | Configuration command | 
 | :-----------                          | :------------------------------ |
@@ -118,8 +118,8 @@ If you want to save your changes and quit, press <kbd>Esc</kbd> then type `:wq` 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 Git (2.28+) allows configuration of the name of the branch created when you
-initialize any new repository.  Alfredo decides to use that feature to set it to `main` so
-it matches the cloud service he will eventually use.
+initialize any new repository.  Sarah decides to use that feature to set it to `main` so
+it matches the cloud service she will eventually use.
 
 ```bash
 $ git config --global init.defaultBranch main
@@ -140,7 +140,7 @@ more inclusive language.
 In 2020, most Git code hosting services transitioned to using `main` as the default
 branch. As an example, any new repository that is opened in GitHub and GitLab default
 to `main`.  However, Git has not yet made the same change.  As a result, local repositories
-must be manually configured have the same main branch name as most cloud services.
+must be manually configured to have the same main branch name as most cloud services.
 
 For versions of Git prior to 2.28, the change can be made on an individual repository level.  The
 command for this is in the next episode.  Note that if this value is unset in your local Git

@@ -1,5 +1,5 @@
 ---
-title: Open Science
+title: Open Research
 teaching: 5
 exercises: 5
 ---
@@ -21,22 +21,22 @@ exercises: 5
 > 
 > \--- John Wilbanks
 
-Free sharing of information might be the ideal in science,
+Free sharing of information might be the ideal in research,
 but the reality is often more complicated.
 Normal practice today looks something like this:
 
-- A scientist collects some data and stores it on a machine
+- A researcher collects some data and stores it on a machine
   that is occasionally backed up by their department.
 - They then write or modify a few small programs
   (which also reside on the machine)
   to analyze that data.
 - Once they have some results,
   they write them up and submit a paper.
-  The scientist might include their data -- a growing number of journals require this -- but
+  The researcher might include their data -- a growing number of journals require this -- but
   they probably don't include the code.
 - Time passes.
-- The journal sends the scientist reviews written anonymously by a handful of other people in their field.
-  The scientist revises the paper to satisfy the reviewers,
+- The journal sends the researcher reviews written anonymously by a handful of other people in their field.
+  The researcher revises the paper to satisfy the reviewers,
   during which time they might also modify the scripts they wrote earlier,
   and resubmits.
 - More time passes.
@@ -46,26 +46,26 @@ Normal practice today looks something like this:
   only people who have personal or institutional access
   will be able to read it.
 
-For a growing number of scientists,
+For a growing number of researchers,
 though,
 the process looks like this:
 
-- The data that the scientist collects is stored in an open access repository
+- The data that the researcher collects is stored in an open access repository
   like [figshare](https://figshare.com/) or
   [Zenodo](https://zenodo.org), possibly as soon as it's collected,
   and given its own
   [Digital Object Identifier](https://en.wikipedia.org/wiki/Digital_object_identifier) (DOI).
   Or the data was already published and is stored in
   [Dryad](https://datadryad.org/).
-- The scientist creates a new repository on GitHub to hold their work.
+- The researcher creates a new repository on GitHub to hold their work.
 - During analysis,
   they push changes to their scripts
   (and possibly some output files)
   to that repository.
-  The scientist also uses the repository for their paper;
+  The researcher also uses the repository for their paper;
   that repository is then the hub for collaboration with colleagues.
 - When they are happy with the state of the paper,
-  the scientist posts a version to [arXiv](https://arxiv.org/)
+  the researcher posts a version to [arXiv](https://arxiv.org/)
   or some other preprint server
   to invite feedback from peers.
 - Based on that feedback,
@@ -73,7 +73,7 @@ the process looks like this:
   before finally submitting the paper to a journal.
 - The published paper includes links to the preprint
   and to the code and data repositories,
-  which  makes it much easier for other scientists
+  which  makes it much easier for other researchers
   to use their work as starting point for their own research.
 
 This open model accelerates discovery:
@@ -81,7 +81,7 @@ the more open work is,
 [the more widely it is cited and re-used](https://doi.org/10.1371/journal.pone.0000308).
 However,
 people who want to work this way need to make some decisions
-about what exactly "open" means and how to do it. You can find more on the different aspects of Open Science in [this book](https://link.springer.com/book/10.1007/978-3-319-00026-8).
+about what exactly "open" means and how to do it. You can find more on the different aspects of Open Research in [this book](https://link.springer.com/book/10.1007/978-3-319-00026-8).
 
 This is one of the (many) reasons we teach version control.
 When used diligently,
@@ -113,10 +113,10 @@ etc.) can be turned into a citable object. You'll learn how to do this in
 
 ## How Reproducible Is My Work?
 
-Ask one of your labmates to reproduce a result you recently obtained
+Ask one of your colleagues to reproduce a result you recently obtained
 using only what they can find in your papers or on the web.
 Try to do the same for one of their results,
-then try to do it for a result from a lab you work with.
+then try to do it for a result from a group you work with.
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -154,7 +154,7 @@ repository and describe what they see when they access that large file.
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
-- Open scientific work is more useful and more highly cited than closed.
+- Open research is more useful and more highly cited than closed.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 

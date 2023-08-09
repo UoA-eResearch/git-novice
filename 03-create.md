@@ -20,7 +20,7 @@ exercises: 0
 Once Git is configured,
 we can start using it.
 
-We will help Alfredo with his new project, create a repository with all his recipes.
+We will help Sarah with her new project, create a repository with all her recipes.
 
 First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
 
@@ -103,8 +103,8 @@ wording of the output might be slightly different.
 ## Places to Create Git Repositories
 
 Along with tracking information about recipes (the project we have already created),
-Alfredo would also like to track information about cocktails.
-Despite Jimmy's concerns, Alfredo creates a `cocktails` project inside his `recipes`
+Sarah would also like to track information about cocktails.
+Despite Kai's concerns, Sarah creates a `cocktails` project inside the `recipes`
 project with the following sequence of commands:
 
 ```bash
@@ -124,10 +124,10 @@ tracking files stored in the `cocktails` subdirectory?
 
 ## Solution
 
-No. Alfredo does not need to make the `cocktails` subdirectory a Git repository
+No. Sarah does not need to make the `cocktails` subdirectory a Git repository
 because the `recipes` repository will track all files, sub-directories, and
 subdirectory files under the `recipes` directory.  Thus, in order to track
-all information about cocktails, Alfredo only needed to add the `cocktails` subdirectory
+all information about cocktails, Sarah only needed to add the `cocktails` subdirectory
 to the `recipes` directory.
 
 Additionally, Git repositories can interfere with each other if they are "nested":
@@ -150,9 +150,9 @@ fatal: Not a git repository (or any of the parent directories): .git
 
 ## Correcting `git init` Mistakes
 
-Jimmy explains to Alfredo how a nested repository is redundant and may cause confusion
-down the road. Alfredo would like to remove the nested repository. How can Alfredo undo
-his last `git init` in the `cocktails` subdirectory?
+Kai explains to Sarah how a nested repository is redundant and may cause confusion
+down the road. Sarah would like to remove the nested repository. How can Sarah undo
+her last `git init` in the `cocktails` subdirectory?
 
 :::::::::::::::  solution
 
@@ -175,7 +175,7 @@ becomes another change that we will need to track, as we will see in the next ep
 ### Solution
 
 Git keeps all of its files in the `.git` directory.
-To recover from this little mistake, Alfredo can just remove the `.git`
+To recover from this little mistake, Sarah can just remove the `.git`
 folder in the cocktails subdirectory by running the following command from inside the `recipes` directory:
 
 ```bash
