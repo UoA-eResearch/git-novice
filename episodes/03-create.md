@@ -104,7 +104,7 @@ wording of the output might be slightly different.
 
 Along with tracking information about recipes (the project we have already created),
 Sarah would also like to track information about cocktails.
-Despite Shen's concerns, Sarah creates a `cocktails` project inside the `recipes`
+Despite Kai's concerns, Sarah creates a `cocktails` project inside the `recipes`
 project with the following sequence of commands:
 
 ```bash
@@ -150,7 +150,7 @@ fatal: Not a git repository (or any of the parent directories): .git
 
 ## Correcting `git init` Mistakes
 
-Shen explains to Sarah how a nested repository is redundant and may cause confusion
+Kai explains to Sarah how a nested repository is redundant and may cause confusion
 down the road. Sarah would like to remove the nested repository. How can Sarah undo
 her last `git init` in the `cocktails` subdirectory?
 
