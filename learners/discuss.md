@@ -22,8 +22,8 @@ $ cat ~/.gitconfig
 
 ```output
 [user]
-	name = Sarah Linguini
-	email = a.linguini@ratatouille.fr
+	name = Sarah Robertson
+	email =  s.robertson@researcher.co
 [color]
 	ui = true
 [core]
