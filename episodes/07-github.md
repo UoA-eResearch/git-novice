@@ -102,11 +102,11 @@ Copy that URL from the browser, go into the local `recipes` repository, and run
 this command:
 
 ```bash
-$ git remote add origin git@github.com:alflin/recipes.git
+$ git remote add origin git@github.com:srobertson/recipes.git
 ```
 
 Make sure to use the URL for your repository rather than Sarah's: the only
-difference should be your username instead of `alflin`.
+difference should be your username instead of `srobertson`.
 
 `origin` is a local name used to refer to the remote repository. It could be called
 anything, but `origin` is a convention that is often used by default in git

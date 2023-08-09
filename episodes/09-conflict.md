@@ -360,7 +360,7 @@ Clone the repository created by your instructor.
 Add a new file to it,
 and modify an existing file (your instructor will tell you which one).
 When asked by your instructor,
-pull her changes from the repository to create a conflict,
+pull their changes from the repository to create a conflict,
 then resolve it.
 
 
@@ -409,7 +409,7 @@ $ git commit -m "Add picture of guacamole"
  create mode 100644 guacamole.jpg
 ```
 
-Suppose that Xin has added a similar picture in the meantime.
+Suppose that Shen has added a similar picture in the meantime.
 her is a picture of a guacamole with nachos, but it is *also* called `guacamole.jpg`.
 When Sarah tries to push, she gets a familiar message:
 
@@ -464,7 +464,7 @@ for text files. So, instead of editing the image file, we must check out
 the version we want to keep. Then we can add and commit this version.
 
 On the key line above, Git has conveniently given us commit identifiers
-for the two versions of `guacamole.jpg`. Our version is `HEAD`, and Xin's
+for the two versions of `guacamole.jpg`. Our version is `HEAD`, and Shen's
 version is `439dc8c0...`. If we want to use our version, we can use
 `git checkout`:
 
@@ -478,8 +478,8 @@ $ git commit -m "Use image of just guacamole instead of with nachos"
 [main 21032c3] Use image of just guacamole instead of with nachos
 ```
 
-If instead we want to use Xin's version, we can use `git checkout` with
-Xin's commit identifier, `439dc8c0`:
+If instead we want to use Shen's version, we can use `git checkout` with
+Shen's commit identifier, `439dc8c0`:
 
 ```bash
 $ git checkout 439dc8c0 guacamole.jpg

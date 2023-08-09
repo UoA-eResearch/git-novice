@@ -273,7 +273,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ```bash
-$ git commit -m "Add basic guacamole's ingredients"
+$ git commit -m "Add basic guacamole ingredients"
 $ git status
 ```
 
@@ -451,19 +451,19 @@ $ git log
 
 ```output
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Modify guacamole to the traditional recipe
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Add basic guacamole's ingredients
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Create a template for recipe
@@ -515,7 +515,7 @@ $ git log -1
 
 ```output
 commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
    Modify guacamole to the traditional recipe

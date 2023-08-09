@@ -30,8 +30,8 @@ where `verb` is what we actually want to do and `options` is additional optional
 Sarah sets up her new laptop:
 
 ```bash
-$ git config --global user.name "Sarah Linguini"
-$ git config --global user.email "a.linguini@ratatouille.fr"
+$ git config --global user.name "Sarah Robertson"
+$ git config --global user.email "s.robertson@researcher.co"
 ```
 
 Please use your own name and email address instead of Sarah's. This user name and email will be associated with your subsequent Git activity,
