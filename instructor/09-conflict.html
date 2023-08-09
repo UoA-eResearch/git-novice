@@ -221,7 +221,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="10-open.html">10. Open Science</a>
+        <a href="10-open.html">10. Open Research</a>
     </div><!--/div.accordion-header-->
         
   </div><!--/div.accordion-item-->
@@ -310,11 +310,11 @@
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/08-collab.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Collaborating</a>
-        <a class="chapter-link float-end" href="../instructor/10-open.html" rel="next">Next: Open Science... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/10-open.html" rel="next">Next: Open Research... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Conflicts</h1>
-        <p> Last updated on 2023-08-06 | 
+        <p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -720,7 +720,7 @@ tools (e.g. <code>htmltidy</code>, <code>perltidy</code>,
 <div class="callout-content">
 <p>Clone the repository created by your instructor. Add a new file to
 it, and modify an existing file (your instructor will tell you which
-one). When asked by your instructor, pull her changes from the
+one). When asked by your instructor, pull their changes from the
 repository to create a conflict, then resolve it.</p>
 </div>
 </div>
@@ -745,9 +745,9 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Let’s try it. Suppose Alfredo takes a picture of its guacamole and
+<p>Let’s try it. Suppose Sarah takes a picture of its guacamole and
 calls it <code>guacamole.jpg</code>.</p>
 <p>If you do not have an image file of guacamole available, you can
 create a dummy binary file like this:</p>
@@ -765,7 +765,7 @@ create a dummy binary file like this:</p>
 <p><code>ls</code> shows us that this created a 1-kilobyte file. It is
 full of random bytes read from the special file,
 <code>/dev/urandom</code>.</p>
-<p>Now, suppose Alfredo adds <code>guacamole.jpg</code> to his
+<p>Now, suppose Sarah adds <code>guacamole.jpg</code> to her
 repository:</p>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -780,9 +780,9 @@ repository:</p>
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 guacamole.jpg</code></pre>
 </div>
-<p>Suppose that Jimmy has added a similar picture in the meantime. His
-is a picture of a guacamole with nachos, but it is <em>also</em> called
-<code>guacamole.jpg</code>. When Alfredo tries to push, he gets a
+<p>Suppose that Kai has added a similar picture in the meantime. It is a
+picture of a guacamole with nachos, but it is <em>also</em> called
+<code>guacamole.jpg</code>. When Sarah tries to push, she gets a
 familiar message:</p>
 <div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -838,7 +838,7 @@ check out the version we want to keep. Then we can add and commit this
 version.</p>
 <p>On the key line above, Git has conveniently given us commit
 identifiers for the two versions of <code>guacamole.jpg</code>. Our
-version is <code>HEAD</code>, and Jimmy’s version is
+version is <code>HEAD</code>, and Kai’s version is
 <code>439dc8c0...</code>. If we want to use our version, we can use
 <code>git checkout</code>:</p>
 <div class="codewrapper sourceCode" id="cb43">
@@ -853,8 +853,8 @@ version is <code>HEAD</code>, and Jimmy’s version is
 </h3>
 <pre class="output" tabindex="0"><code>[main 21032c3] Use image of just guacamole instead of with nachos</code></pre>
 </div>
-<p>If instead we want to use Jimmy’s version, we can use
-<code>git checkout</code> with Jimmy’s commit identifier,
+<p>If instead we want to use Kai’s version, we can use
+<code>git checkout</code> with Kai’s commit identifier,
 <code>439dc8c0</code>:</p>
 <div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -966,7 +966,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <table class="table"><colgroup><col width="6%"><col width="34%"><col width="59%"></colgroup><thead><tr class="header"><th>order</th>
 <th>action . . . . . .</th>
@@ -1020,7 +1020,7 @@ resolved.</li>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
         <a class="chapter-link" href="../instructor/08-collab.html" rel="prev"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous: Collaborating</a>
-        <a class="chapter-link float-end" href="../instructor/10-open.html" rel="next">Next: Open Science... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/10-open.html" rel="next">Next: Open Research... <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
     </nav></div> <!-- / div.primary-content.col-xs-12 -->
 <!-- END:   inst/pkgdown/templates/content-instructor.html-->
@@ -1065,8 +1065,8 @@ resolved.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/09-conflict.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/09-conflict.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-08-06",
-  "datePublished": "2023-08-08"
+  "dateModified": "2023-08-09",
+  "datePublished": "2023-08-09"
 }
 
   </script><script>

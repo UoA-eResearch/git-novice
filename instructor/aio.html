@@ -278,7 +278,7 @@
 <div class="accordion accordion-flush" id="accordionFlush11">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading11">
-        <a href="10-open.html">10. Open Science</a>
+        <a href="10-open.html">10. Open Research</a>
     </div>
 <!--/div.accordion-header-->
         
@@ -390,7 +390,7 @@
         
 <section id="aio-01-basics"><p>Content from <a href="01-basics.html">Automated Version Control</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/01-basics.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 5 minutes </p>
@@ -432,10 +432,10 @@ situation:</p>
 <p>We’ve all been in this situation before: it seems unnecessary to have
 multiple nearly-identical versions of the same document. Some word
 processors let us deal with this a little better, such as Microsoft
-Word’s <a href="https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a" class="external-link">Track
-Changes</a>, Google Docs’ <a href="https://support.google.com/docs/answer/190843?hl=en" class="external-link">version
-history</a>, or LibreOffice’s <a href="https://help.libreoffice.org/Common/Recording_and_Displaying_Changes" class="external-link">Recording
-and Displaying Changes</a>.</p>
+Word’s <a href="https://support.office.com/en-us/article/Track-changes-in-Word-197ba630-0f5f-4a8e-9a77-3712475e806a" class="external-link">track
+changes</a>, Google Docs’ <a href="https://support.google.com/docs/answer/190843?hl=en" class="external-link">version
+history</a>, or LibreOffice’s <a href="https://help.libreoffice.org/Common/Recording_and_Displaying_Changes" class="external-link">recording
+and displaying changes</a> feature.</p>
 <p>Version control systems start with a base version of the document and
 then record changes you make each step of the way. You can think of it
 as a recording of your progress: you can rewind to start at the base
@@ -547,7 +547,7 @@ problems.</p></li>
 </div>
 </div></section><section id="aio-02-setup"><p>Content from <a href="02-setup.html">Setting Up Git</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/02-setup.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 5 minutes </p>
@@ -595,14 +595,14 @@ project).</li>
 <code>git verb options</code>, where <code>verb</code> is what we
 actually want to do and <code>options</code> is additional optional
 information which may be needed for the <code>verb</code>. So here is
-how Alfredo sets up his new laptop:</p>
+how Sarah sets up her new laptop:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.name <span class="st">"Alfredo Linguini"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.email <span class="st">"a.linguini@ratatouille.fr"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.name <span class="st">"Sarah Robertson"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git config <span class="at">--global</span> user.email <span class="st">"s.robertson@researcher.co"</span></span></code></pre>
 </div>
-<p>Please use your own name and email address instead of Alfredo’s. This
+<p>Please use your own name and email address instead of Sarah’s. This
 user name and email will be associated with your subsequent Git
 activity, which means that any changes pushed to <a href="https://github.com/" class="external-link">GitHub</a>, <a href="https://bitbucket.org/" class="external-link">BitBucket</a>, <a href="https://gitlab.com/" class="external-link">GitLab</a> or another Git host server after
 this lesson will include this information.</p>
@@ -660,7 +660,7 @@ following settings are recommended:</p>
 </div>
 </div>
 </div>
-<p>Alfredo also has to set his favorite text editor, following this
+<p>Sarah also has to set her favorite text editor, following this
 table:</p>
 <table class="table">
 <colgroup>
@@ -754,9 +754,9 @@ hit <kbd>Enter</kbd> or <kbd>↵</kbd> or on Macs, <kbd>Return</kbd>.</p>
 </div>
 </div>
 <p>Git (2.28+) allows configuration of the name of the branch created
-when you initialize any new repository. Alfredo decides to use that
+when you initialize any new repository. Sarah decides to use that
 feature to set it to <code>main</code> so it matches the cloud service
-he will eventually use.</p>
+she will eventually use.</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -782,7 +782,7 @@ community</a> has moved to adopt more inclusive language.</p>
 <code>main</code> as the default branch. As an example, any new
 repository that is opened in GitHub and GitLab default to
 <code>main</code>. However, Git has not yet made the same change. As a
-result, local repositories must be manually configured have the same
+result, local repositories must be manually configured to have the same
 main branch name as most cloud services.</p>
 <p>For versions of Git prior to 2.28, the change can be made on an
 individual repository level. The command for this is in the next
@@ -887,7 +887,7 @@ per machine.</li>
 </div>
 </div></section><section id="aio-03-create"><p>Content from <a href="03-create.html">Creating a Repository</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/03-create.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 10 minutes </p>
@@ -921,8 +921,8 @@ per machine.</li>
 </div>
 </div>
 <p>Once Git is configured, we can start using it.</p>
-<p>We will help Alfredo with his new project, create a repository with
-all his recipes.</p>
+<p>We will help Sarah with her new project, create a repository with all
+her recipes.</p>
 <p>First, let’s create a new directory in the <code>Desktop</code>
 folder for our work and then change the current working directory to the
 newly created one:</p>
@@ -1012,9 +1012,9 @@ wording of the output might be slightly different.</p>
 </h3>
 <div class="callout-content">
 <p>Along with tracking information about recipes (the project we have
-already created), Alfredo would also like to track information about
-cocktails. Despite Jimmy’s concerns, Alfredo creates a
-<code>cocktails</code> project inside his <code>recipes</code> project
+already created), Sarah would also like to track information about
+cocktails. Despite Kai’s concerns, Sarah creates a
+<code>cocktails</code> project inside the <code>recipes</code> project
 with the following sequence of commands:</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1040,13 +1040,13 @@ in the <code>cocktails</code> subdirectory?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>No. Alfredo does not need to make the <code>cocktails</code>
+<p>No. Sarah does not need to make the <code>cocktails</code>
 subdirectory a Git repository because the <code>recipes</code>
 repository will track all files, sub-directories, and subdirectory files
 under the <code>recipes</code> directory. Thus, in order to track all
-information about cocktails, Alfredo only needed to add the
+information about cocktails, Sarah only needed to add the
 <code>cocktails</code> subdirectory to the <code>recipes</code>
 directory.</p>
 <p>Additionally, Git repositories can interfere with each other if they
@@ -1078,10 +1078,10 @@ as shown above:</p>
 <h3 class="callout-title">Correcting <code>git init</code> Mistakes<a class="anchor" aria-label="anchor" href="#correcting-git-init-mistakes"></a>
 </h3>
 <div class="callout-content">
-<p>Jimmy explains to Alfredo how a nested repository is redundant and
-may cause confusion down the road. Alfredo would like to remove the
-nested repository. How can Alfredo undo his last <code>git init</code>
-in the <code>cocktails</code> subdirectory?</p>
+<p>Kai explains to Sarah how a nested repository is redundant and may
+cause confusion down the road. Sarah would like to remove the nested
+repository. How can Sarah undo her last <code>git init</code> in the
+<code>cocktails</code> subdirectory?</p>
 </div>
 </div>
 </div>
@@ -1092,7 +1092,7 @@ in the <code>cocktails</code> subdirectory?</p>
   Solution – USE WITH CAUTION!
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
@@ -1116,7 +1116,7 @@ episode.</p>
 <h3 id="solution-1">Solution<a class="anchor" aria-label="anchor" href="#solution-1"></a>
 </h3>
 <p>Git keeps all of its files in the <code>.git</code> directory. To
-recover from this little mistake, Alfredo can just remove the
+recover from this little mistake, Sarah can just remove the
 <code>.git</code> folder in the cocktails subdirectory by running the
 following command from inside the <code>recipes</code> directory:</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -1151,7 +1151,7 @@ directory.</li>
 </div>
 </div></section><section id="aio-04-changes"><p>Content from <a href="04-changes.html">Tracking Changes</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 20 minutes </p>
@@ -1349,7 +1349,7 @@ done recently, we can ask Git to show us the project’s history using
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Linguini &lt;a.linguini@ratatouille.fr&gt;
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Create a template for recipe</code></pre>
@@ -1377,7 +1377,7 @@ version).</p>
 </div>
 </div>
 </div>
-<p>Now suppose Alfredo adds more information to the file. (Again, we’ll
+<p>Now suppose Sarah adds more information to the file. (Again, we’ll
 edit with <code>nano</code> and then <code>cat</code> the file to show
 its contents; you may use a different editor, and don’t need to
 <code>cat</code>.)</p>
@@ -1464,7 +1464,7 @@ line.</li>
 <div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic guacamole's ingredients"</span></span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic guacamole ingredients"</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -1633,19 +1633,19 @@ nothing to commit, working tree clean</code></pre>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -&gt; main)
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
     Modify guacamole to the traditional recipe
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Add basic guacamole's ingredients
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Create a template for recipe</code></pre>
@@ -1710,7 +1710,7 @@ commit you can use:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -&gt; main)
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
    Modify guacamole to the traditional recipe</code></pre>
@@ -2091,7 +2091,7 @@ the local repository.</li>
 </div>
 </div></section><section id="aio-05-history"><p>Content from <a href="05-history.html">Exploring History</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/05-history.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 25 minutes </p>
@@ -2216,7 +2216,7 @@ we see by using <code>git diff</code>.</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Alfredo Linguini &lt;a.linguini@ratatouille.fr&gt;
+Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
     Create a template for recipe
@@ -2993,7 +2993,7 @@ nothing to commit, working tree clean</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>If you only want to ignore the contents of
 <code>receipts/plots</code>, you can change your <code>.gitignore</code>
@@ -3037,7 +3037,7 @@ directory except for <code>final.png</code>? Hint: Find out what
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>You would add the following two lines to your .gitignore:</p>
 <div class="codewrapper">
@@ -3088,7 +3088,7 @@ not <code>receipts/data</code>?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>If you want to ignore the contents of <code>receipts/</code> but not
 those of <code>receipts/data/</code>, you can change your
@@ -3138,7 +3138,7 @@ ignore all <code>.dat</code> files in
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Appending <code>receipts/data/market_position/gps/*.dat</code> will
 match every file in <code>receipts/data/market_position/gps</code> that
@@ -3179,7 +3179,7 @@ listing the names of the corresponding folders?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>In the <code>.gitignore</code> file, write:</p>
 <div class="codewrapper">
@@ -3220,7 +3220,7 @@ exception with the exclamation point operator.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>The <code>!</code> modifier will negate an entry from a previously
 defined ignore pattern. Because the <code>!*.dat</code> entry negates
@@ -3266,7 +3266,7 @@ via <code>.gitignore</code>.</p></li>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li>append either <code>log_*</code> or <code>log*</code> as a new entry
@@ -3294,7 +3294,7 @@ ignore.</li>
 </div>
 </div></section><section id="aio-07-github"><p>Content from <a href="07-github.html">Remotes in GitHub</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/07-github.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 45 minutes </p>
@@ -3399,11 +3399,11 @@ git related SSH.</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git remote add origin git@github.com:alflin/recipes.git</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git remote add origin git@github.com:srobertson/recipes.git</span></code></pre>
 </div>
-<p>Make sure to use the URL for your repository rather than Alfredo’s:
-the only difference should be your username instead of
-<code>alflin</code>.</p>
+<p>Make sure to use the URL for your repository rather than Sarah’s: the
+only difference should be your username instead of
+<code>srobertson</code>.</p>
 <p><code>origin</code> is a local name used to refer to the remote
 repository. It could be called anything, but <code>origin</code> is a
 convention that is often used by default in git and GitHub, so it’s
@@ -3426,9 +3426,9 @@ talking about how they might be used for collaboration.</p>
 </section><section id="ssh-background-and-setup"><h2 class="section-heading">3. SSH Background and Setup<a class="anchor" aria-label="anchor" href="#ssh-background-and-setup"></a>
 </h2>
 <hr class="half-width">
-<p>Before Alfredo can connect to a remote repository, he needs to set up
-a way for his computer to authenticate with GitHub so it knows it’s him
-trying to connect to his remote repository.</p>
+<p>Before Sarah can connect to a remote repository, she needs to set up
+a way for her computer to authenticate with GitHub so it knows it’s her
+trying to connect to her remote repository.</p>
 <p>We are going to set up the method that is commonly used by many
 different services to authenticate access on the command line. This
 method is called Secure Shell Protocol (SSH). SSH is a cryptographic
@@ -3487,17 +3487,17 @@ your computer.</p>
 </div>
 <p>Your output is going to look a little different depending on whether
 or not SSH has ever been set up on the computer you are using.</p>
-<p>Alfredo has not set up SSH on his computer, so his output is</p>
+<p>Sarah has not set up SSH on her computer, so her output is</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>ls: cannot access '/c/Users/Alfredo/.ssh': No such file or directory</code></pre>
+<pre class="output" tabindex="0"><code>ls: cannot access '/c/Users/Sarah/.ssh': No such file or directory</code></pre>
 </div>
 <p>If SSH has been set up on the computer you’re using, the public and
 private key pairs will be listed. The file names are either
 <code>id_ed25519</code>/<code>id_ed25519.pub</code> or
 <code>id_rsa</code>/<code>id_rsa.pub</code> depending on how the key
-pairs were set up. Since they don’t exist on Alfredo’s computer, he uses
+pairs were set up. Since they don’t exist on Sarah’s computer, she uses
 this command to create them.</p>
 <div class="section level3">
 <h3 id="create-an-ssh-key-pair">3.1 Create an SSH key pair<a class="anchor" aria-label="anchor" href="#create-an-ssh-key-pair"></a>
@@ -3517,18 +3517,18 @@ algorithm, use:
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Generating public/private ed25519 key pair.
-Enter file in which to save the key (/c/Users/Alfredo/.ssh/id_ed25519):</code></pre>
+Enter file in which to save the key (/c/Users/Sarah/.ssh/id_ed25519):</code></pre>
 </div>
 <p>We want to use the default file, so just press <kbd>Enter</kbd>.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Created directory '/c/Users/Alfredo/.ssh'.
+<pre class="output" tabindex="0"><code>Created directory '/c/Users/Sarah/.ssh'.
 Enter passphrase (empty for no passphrase):</code></pre>
 </div>
-<p>Now, it is prompting Alfredo for a passphrase. Since he is using his
-kitchen’s laptop that other people sometimes have access to, he wants to
-create a passphrase. Be sure to use something memorable or save your
+<p>Now, it is prompting Sarah for a passphrase. Since she is using her
+kitchen’s laptop that other people sometimes have access to, she wants
+to create a passphrase. Be sure to use something memorable or save your
 passphrase somewhere, as there is no “reset my password” option.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3540,8 +3540,8 @@ confirmation</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Your identification has been saved in /c/Users/Alfredo/.ssh/id_ed25519
-Your public key has been saved in /c/Users/Alfredo/.ssh/id_ed25519.pub
+<pre class="output" tabindex="0"><code>Your identification has been saved in /c/Users/Sarah/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Sarah/.ssh/id_ed25519.pub
 The key fingerprint is:
 SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o a.linguini@ratatouille.fr
 The key's randomart image is:
@@ -3570,10 +3570,10 @@ when we check.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>drwxr-xr-x 1 Alfredo   197121   0 Jul 16 14:48 ./
-drwxr-xr-x 1 Alfredo   197121   0 Jul 16 14:48 ../
--rw-r--r-- 1 Alfredo   197121 419 Jul 16 14:48 id_ed25519
--rw-r--r-- 1 Alfredo   197121 106 Jul 16 14:48 id_ed25519.pub</code></pre>
+<pre class="output" tabindex="0"><code>drwxr-xr-x 1 Sarah   197121   0 Jul 16 14:48 ./
+drwxr-xr-x 1 Sarah   197121   0 Jul 16 14:48 ../
+-rw-r--r-- 1 Sarah   197121 419 Jul 16 14:48 id_ed25519
+-rw-r--r-- 1 Sarah   197121 106 Jul 16 14:48 id_ed25519.pub</code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -3615,7 +3615,7 @@ key.</p>
 corner to get the drop-down menu. Click “Settings,” then on the settings
 page, click “SSH and GPG keys,” on the left side “Account settings”
 menu. Click the “New SSH key” button on the right side. Now, you can add
-the title (Alfredo uses the title “Alfredo’s Kitchen Laptop” so he can
+the title (Sarah uses the title “Sarah’s Kitchen Laptop” so she can
 remember where the original key pair files are located), paste your SSH
 key into the field, and click the “Add SSH key” to complete the
 setup.</p>
@@ -3629,7 +3629,7 @@ the command line.</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Hi Alfredo! You've successfully authenticated, but GitHub does not provide shell access.</code></pre>
+<pre class="output" tabindex="0"><code>Hi Sarah! You've successfully authenticated, but GitHub does not provide shell access.</code></pre>
 </div>
 <p>Good! This output confirms that the SSH key works as intended. We are
 now ready to push our work to the remote repository.</p>
@@ -3645,7 +3645,7 @@ repository on GitHub:</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git push origin main</span></code></pre>
 </div>
-<p>Since Alfredo set up a passphrase, it will prompt him for it. If you
+<p>Since Sarah set up a passphrase, it will prompt her for it. If you
 completed advanced settings for your authentication, it will not prompt
 for a passphrase.</p>
 <div class="codewrapper">
@@ -4244,7 +4244,7 @@ has changed with command line? And on GitHub?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>On the command line, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
@@ -4309,7 +4309,7 @@ up.</li>
 </div>
 </div></section><section id="aio-09-conflict"><p>Content from <a href="09-conflict.html">Conflicts</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 15 minutes </p>
@@ -4716,7 +4716,7 @@ tools (e.g. <code>htmltidy</code>, <code>perltidy</code>,
 <div class="callout-content">
 <p>Clone the repository created by your instructor. Add a new file to
 it, and modify an existing file (your instructor will tell you which
-one). When asked by your instructor, pull her changes from the
+one). When asked by your instructor, pull their changes from the
 repository to create a conflict, then resolve it.</p>
 </div>
 </div>
@@ -4741,9 +4741,9 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Let’s try it. Suppose Alfredo takes a picture of its guacamole and
+<p>Let’s try it. Suppose Sarah takes a picture of its guacamole and
 calls it <code>guacamole.jpg</code>.</p>
 <p>If you do not have an image file of guacamole available, you can
 create a dummy binary file like this:</p>
@@ -4761,7 +4761,7 @@ create a dummy binary file like this:</p>
 <p><code>ls</code> shows us that this created a 1-kilobyte file. It is
 full of random bytes read from the special file,
 <code>/dev/urandom</code>.</p>
-<p>Now, suppose Alfredo adds <code>guacamole.jpg</code> to his
+<p>Now, suppose Sarah adds <code>guacamole.jpg</code> to her
 repository:</p>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4776,9 +4776,9 @@ repository:</p>
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 guacamole.jpg</code></pre>
 </div>
-<p>Suppose that Jimmy has added a similar picture in the meantime. His
-is a picture of a guacamole with nachos, but it is <em>also</em> called
-<code>guacamole.jpg</code>. When Alfredo tries to push, he gets a
+<p>Suppose that Kai has added a similar picture in the meantime. It is a
+picture of a guacamole with nachos, but it is <em>also</em> called
+<code>guacamole.jpg</code>. When Sarah tries to push, she gets a
 familiar message:</p>
 <div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4834,7 +4834,7 @@ check out the version we want to keep. Then we can add and commit this
 version.</p>
 <p>On the key line above, Git has conveniently given us commit
 identifiers for the two versions of <code>guacamole.jpg</code>. Our
-version is <code>HEAD</code>, and Jimmy’s version is
+version is <code>HEAD</code>, and Kai’s version is
 <code>439dc8c0...</code>. If we want to use our version, we can use
 <code>git checkout</code>:</p>
 <div class="codewrapper sourceCode" id="cb43">
@@ -4849,8 +4849,8 @@ version is <code>HEAD</code>, and Jimmy’s version is
 </h3>
 <pre class="output" tabindex="0"><code>[main 21032c3] Use image of just guacamole instead of with nachos</code></pre>
 </div>
-<p>If instead we want to use Jimmy’s version, we can use
-<code>git checkout</code> with Jimmy’s commit identifier,
+<p>If instead we want to use Kai’s version, we can use
+<code>git checkout</code> with Kai’s commit identifier,
 <code>439dc8c0</code>:</p>
 <div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -4987,7 +4987,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <table class="table">
 <colgroup>
@@ -5054,9 +5054,9 @@ resolved.</li>
 </ul>
 </div>
 </div>
-</div></section><section id="aio-10-open"><p>Content from <a href="10-open.html">Open Science</a></p>
+</div></section><section id="aio-10-open"><p>Content from <a href="10-open.html">Open Research</a></p>
 <hr>
-<p> Last updated on 2023-08-06 | 
+<p> Last updated on 2023-08-09 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/10-open.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time <i aria-hidden="true" data-feather="clock"></i> 10 minutes </p>
@@ -5094,20 +5094,20 @@ electronic lab notebook for computational work.</li>
 “broken”.</p>
 <p>-– John Wilbanks</p>
 </blockquote>
-<p>Free sharing of information might be the ideal in science, but the
+<p>Free sharing of information might be the ideal in research, but the
 reality is often more complicated. Normal practice today looks something
 like this:</p>
 <ul>
-<li>A scientist collects some data and stores it on a machine that is
+<li>A researcher collects some data and stores it on a machine that is
 occasionally backed up by their department.</li>
 <li>They then write or modify a few small programs (which also reside on
 the machine) to analyze that data.</li>
 <li>Once they have some results, they write them up and submit a paper.
-The scientist might include their data – a growing number of journals
+The researcher might include their data – a growing number of journals
 require this – but they probably don’t include the code.</li>
 <li>Time passes.</li>
-<li>The journal sends the scientist reviews written anonymously by a
-handful of other people in their field. The scientist revises the paper
+<li>The journal sends the researcher reviews written anonymously by a
+handful of other people in their field. The researcher revises the paper
 to satisfy the reviewers, during which time they might also modify the
 scripts they wrote earlier, and resubmits.</li>
 <li>More time passes.</li>
@@ -5116,33 +5116,33 @@ online copy of the data, but the paper itself will be behind a paywall:
 only people who have personal or institutional access will be able to
 read it.</li>
 </ul>
-<p>For a growing number of scientists, though, the process looks like
+<p>For a growing number of researchers, though, the process looks like
 this:</p>
 <ul>
-<li>The data that the scientist collects is stored in an open access
+<li>The data that the researcher collects is stored in an open access
 repository like <a href="https://figshare.com/" class="external-link">figshare</a> or <a href="https://zenodo.org" class="external-link">Zenodo</a>, possibly as soon as it’s
 collected, and given its own <a href="https://en.wikipedia.org/wiki/Digital_object_identifier" class="external-link">Digital
 Object Identifier</a> (DOI). Or the data was already published and is
 stored in <a href="https://datadryad.org/" class="external-link">Dryad</a>.</li>
-<li>The scientist creates a new repository on GitHub to hold their
+<li>The researcher creates a new repository on GitHub to hold their
 work.</li>
 <li>During analysis, they push changes to their scripts (and possibly
-some output files) to that repository. The scientist also uses the
+some output files) to that repository. The researcher also uses the
 repository for their paper; that repository is then the hub for
 collaboration with colleagues.</li>
-<li>When they are happy with the state of the paper, the scientist posts
-a version to <a href="https://arxiv.org/" class="external-link">arXiv</a> or some other
+<li>When they are happy with the state of the paper, the researcher
+posts a version to <a href="https://arxiv.org/" class="external-link">arXiv</a> or some other
 preprint server to invite feedback from peers.</li>
 <li>Based on that feedback, they may post several revisions before
 finally submitting the paper to a journal.</li>
 <li>The published paper includes links to the preprint and to the code
-and data repositories, which makes it much easier for other scientists
+and data repositories, which makes it much easier for other researchers
 to use their work as starting point for their own research.</li>
 </ul>
 <p>This open model accelerates discovery: the more open work is, <a href="https://doi.org/10.1371/journal.pone.0000308" class="external-link">the more widely it
 is cited and re-used</a>. However, people who want to work this way need
 to make some decisions about what exactly “open” means and how to do it.
-You can find more on the different aspects of Open Science in <a href="https://link.springer.com/book/10.1007/978-3-319-00026-8" class="external-link">this
+You can find more on the different aspects of Open Research in <a href="https://link.springer.com/book/10.1007/978-3-319-00026-8" class="external-link">this
 book</a>.</p>
 <p>This is one of the (many) reasons we teach version control. When used
 diligently, it answers the “how” question by acting as a shareable
@@ -5181,10 +5181,10 @@ Citation</a>.</p>
 <h3 class="callout-title">How Reproducible Is My Work?<a class="anchor" aria-label="anchor" href="#how-reproducible-is-my-work"></a>
 </h3>
 <div class="callout-content">
-<p>Ask one of your labmates to reproduce a result you recently obtained
-using only what they can find in your papers or on the web. Try to do
-the same for one of their results, then try to do it for a result from a
-lab you work with.</p>
+<p>Ask one of your colleagues to reproduce a result you recently
+obtained using only what they can find in your papers or on the web. Try
+to do the same for one of their results, then try to do it for a result
+from a group you work with.</p>
 </div>
 </div>
 </div>
@@ -5238,8 +5238,7 @@ access that large file.</p>
 </h3>
 <div class="callout-content">
 <ul>
-<li>Open scientific work is more useful and more highly cited than
-closed.</li>
+<li>Open research is more useful and more highly cited than closed.</li>
 </ul>
 </div>
 </div>
@@ -5787,7 +5786,7 @@ directory is not version controlled.</li>
   Solution to Challenge
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>This can be done in Rstudio:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -5868,8 +5867,8 @@ project over time.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/aio.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/aio.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-08-08",
-  "datePublished": "2023-08-08"
+  "dateModified": "2023-08-09",
+  "datePublished": "2023-08-09"
 }
 
   </script><script>
