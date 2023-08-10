@@ -314,7 +314,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Conflicts</h1>
-        <p> Last updated on 2023-08-09 | 
+        <p> Last updated on 2023-08-10 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/09-conflict.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -419,7 +419,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/alflin/recipes.git
+To https://github.com/srobertson/recipes.git
    29aba7c..dabb4c8  main -&gt; main</code></pre>
 </div>
 <p>Now let’s have the owner make a different change to their copy
@@ -462,9 +462,9 @@ To https://github.com/alflin/recipes.git
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>To https://github.com/alflin/recipes.git
+<pre class="output" tabindex="0"><code>To https://github.com/srobertson/recipes.git
  ! [rejected]        main -&gt; main (fetch first)
-error: failed to push some refs to 'https://github.com/alflin/recipes.git'
+error: failed to push some refs to 'https://github.com/srobertson/recipes.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -488,7 +488,7 @@ remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (1/1), done.
 remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -&gt; FETCH_HEAD
     29aba7c..dabb4c8  main     -&gt; origin/main
 Auto-merging guacamole.md
@@ -638,7 +638,7 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
 Total 6 (delta 4), reused 0 (delta 0)
 remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
-To https://github.com/alflin/recipes.git
+To https://github.com/srobertson/recipes.git
    dabb4c8..2abf2b1  main -&gt; main</code></pre>
 </div>
 <p>Git keeps track of what we’ve merged with what, so we don’t have to
@@ -657,7 +657,7 @@ remote: Counting objects: 100% (10/10), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
 Unpacking objects: 100% (6/6), done.
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -&gt; FETCH_HEAD
     dabb4c8..2abf2b1  main     -&gt; origin/main
 Updating dabb4c8..2abf2b1
@@ -745,7 +745,7 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Sarah takes a picture of its guacamole and
 calls it <code>guacamole.jpg</code>.</p>
@@ -760,7 +760,7 @@ create a dummy binary file like this:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>-rw-r--r-- 1 alflin 57095 1.0K Mar  8 20:24 guacamole.jpg</code></pre>
+<pre class="output" tabindex="0"><code>-rw-r--r-- 1 srobertson 57095 1.0K Mar  8 20:24 guacamole.jpg</code></pre>
 </div>
 <p><code>ls</code> shows us that this created a 1-kilobyte file. It is
 full of random bytes read from the special file,
@@ -792,9 +792,9 @@ familiar message:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>To https://github.com/alflin/recipes.git
+<pre class="output" tabindex="0"><code>To https://github.com/srobertson/recipes.git
  ! [rejected]        main -&gt; main (fetch first)
-error: failed to push some refs to 'https://github.com/alflin/recipes.git'
+error: failed to push some refs to 'https://github.com/srobertson/recipes.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -817,7 +817,7 @@ remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes.git
+From https://github.com/srobertson/recipes.git
  * branch            main     -&gt; FETCH_HEAD
    6a67967..439dc8c  main     -&gt; origin/main
 warning: Cannot merge binary files: guacamole.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
@@ -966,7 +966,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <table class="table"><colgroup><col width="6%"><col width="34%"><col width="59%"></colgroup><thead><tr class="header"><th>order</th>
 <th>action . . . . . .</th>
@@ -1065,8 +1065,8 @@ resolved.</li>
   "url": "https://swcarpentry.github.io/git-novice/instructor/09-conflict.html",
   "identifier": "https://swcarpentry.github.io/git-novice/instructor/09-conflict.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-08-09",
-  "datePublished": "2023-08-09"
+  "dateModified": "2023-08-10",
+  "datePublished": "2023-08-10"
 }
 
   </script><script>

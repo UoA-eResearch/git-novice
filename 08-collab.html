@@ -315,7 +315,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Collaborating</h1>
-        <p> Last updated on 2023-08-06 | 
+        <p> Last updated on 2023-08-10 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/08-collab.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -386,19 +386,19 @@ Collaborator enters:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:alflin/recipes.git ~/Desktop/alflin-recipes</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:srobertson/recipes.git ~/Desktop/srobertson-recipes</span></code></pre>
 </div>
-<p>Replace ‘alflin’ with the Owner’s username.</p>
+<p>Replace ‘srobertson’ with the Owner’s username.</p>
 <p>If you choose to clone without the clone path
-(<code>~/Desktop/alflin-recipes</code>) specified at the end, you will
-clone inside your own recipes folder! Make sure to navigate to the
+(<code>~/Desktop/srobertson-recipes</code>) specified at the end, you
+will clone inside your own recipes folder! Make sure to navigate to the
 <code>Desktop</code> folder first.</p>
 <figure><img src="fig/github-collaboration.svg" alt="After Creating Clone of Repository" class="figure mx-auto d-block"></figure><p>The Collaborator can now make a change in her clone of the Owner’s
 repository, exactly the same way as we’ve been doing before:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/alflin-recipes</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/srobertson-recipes</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> nano hummus.md</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cat hummus.md</span></code></pre>
 </div>
@@ -439,7 +439,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/alflin/recipes.git
+To https://github.com/srobertson/recipes.git
    9272da5..29aba7c  main -&gt; main</code></pre>
 </div>
 <p>Note that we didn’t have to create a remote called
@@ -511,7 +511,7 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -&gt; FETCH_HEAD
    9272da5..29aba7c  main     -&gt; origin/main
 Updating 9272da5..29aba7c
@@ -579,7 +579,7 @@ has changed with command line? And on GitHub?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>On the command line, the Collaborator can use
 <code>git fetch origin main</code> to get the remote changes into the
@@ -697,8 +697,8 @@ up.</li>
   "url": "https://swcarpentry.github.io/git-novice/08-collab.html",
   "identifier": "https://swcarpentry.github.io/git-novice/08-collab.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-08-06",
-  "datePublished": "2023-08-09"
+  "dateModified": "2023-08-10",
+  "datePublished": "2023-08-10"
 }
 
   </script><script>
