@@ -55,13 +55,13 @@ repository with the same name.
 To clone the Owner's repo into her `Desktop` folder, the Collaborator enters:
 
 ```bash
-$ git clone git@github.com:alflin/recipes.git ~/Desktop/alflin-recipes
+$ git clone git@github.com:srobertson/recipes.git ~/Desktop/srobertson-recipes
 ```
 
-Replace 'alflin' with the Owner's username.
+Replace 'srobertson' with the Owner's username.
 
 If you choose to clone without the clone path
-(`~/Desktop/alflin-recipes`) specified at the end,
+(`~/Desktop/srobertson-recipes`) specified at the end,
 you will clone inside your own recipes folder!
 Make sure to navigate to the `Desktop` folder first.
 
@@ -71,7 +71,7 @@ The Collaborator can now make a change in her clone of the Owner's repository,
 exactly the same way as we've been doing before:
 
 ```bash
-$ cd ~/Desktop/alflin-recipes
+$ cd ~/Desktop/srobertson-recipes
 $ nano hummus.md
 $ cat hummus.md
 ```
@@ -107,7 +107,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/alflin/recipes.git
+To https://github.com/srobertson/recipes.git
    9272da5..29aba7c  main -> main
 ```
 
@@ -167,7 +167,7 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -> FETCH_HEAD
    9272da5..29aba7c  main     -> origin/main
 Updating 9272da5..29aba7c

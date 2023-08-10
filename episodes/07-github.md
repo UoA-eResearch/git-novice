@@ -119,8 +119,8 @@ $ git remote -v
 ```
 
 ```output
-origin   git@github.com:alflin/recipes.git (fetch)
-origin   git@github.com:alflin/recipes.git (push)
+origin   git@github.com:srobertson/recipes.git (fetch)
+origin   git@github.com:srobertson/recipes.git (push)
 ```
 
 We'll discuss remotes in more detail in the next episode, while
@@ -146,7 +146,7 @@ Compressing objects: 100% (11/11), done.
 Writing objects: 100% (16/16), 1.45 KiB | 372.00 KiB/s, done.
 Total 16 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), done.
-To https://github.com/alflin/recipes.git
+To https://github.com/srobertson/recipes.git
  * [new branch]      main -> main
 ```
 
@@ -223,7 +223,7 @@ $ git pull origin main
 ```
 
 ```output
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -> FETCH_HEAD
 Already up-to-date.
 ```
@@ -353,7 +353,7 @@ remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -> FETCH_HEAD
  * [new branch]      main     -> origin/main
 fatal: refusing to merge unrelated histories
@@ -368,7 +368,7 @@ $ git pull --allow-unrelated-histories origin main
 ```
 
 ```output
-From https://github.com/alflin/recipes
+From https://github.com/srobertson/recipes
  * branch            main     -> FETCH_HEAD
 Merge made by the 'recursive' strategy.
 README.md | 1 +
