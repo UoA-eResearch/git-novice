@@ -54,13 +54,13 @@ $ git config --global alias.co checkout
 Now if we return to the example from [Exploring History](../episodes/05-history.md) where we ran:
 
 ```bash
-$ git checkout f22b25e guacamole.md
+$ git checkout f22b25e soup.txt
 ```
 
 we could now instead type:
 
 ```bash
-$ git co f22b25e guacamole.md
+$ git co f22b25e soup.txt
 ```
 
 ## Styling Git's Log
@@ -149,16 +149,16 @@ Enter the same text that we began with before:
 # Instructions
 ```
 
-Save the document into the `recipes-nontext` directory with the name of `guacamole.doc`.
+Save the document into the `recipes-nontext` directory with the name of `soup.doc`.
 Back in the terminal, run the usual commands for setting up a new Git repository:
 
 ```bash
 $ git init
-$ git add guacamole.doc
+$ git add soup.doc
 $ git commit -m "Create a template for recipe"
 ```
 
-Then make the same changes to `guacamole.doc` that we (or Sarah) previously made to `guacamole.md`.
+Then make the same changes to `soup.doc` that we (or Sarah) previously made to `soup.txt`.
 
 ```output
 # Ingredients
@@ -176,18 +176,18 @@ $ git diff
 ```
 
 ```output
-diff --git a/guacamole.doc b/guacamole.doc
+diff --git a/soup.doc b/soup.doc
 index 53a66fd..6e988e9 100644
-Binary files a/guacamole.doc and b/guacamole.doc differ
+Binary files a/soup.doc and b/soup.doc differ
 ```
 
 Compare this to the earlier `git diff` obtained when using text files:
 
 ```output
-diff --git a/guacamole.md b/guacamole.md
+diff --git a/soup.txt b/soup.txt
 index df0654a..315bf3a 100644
---- a/guacamole.md
-+++ b/guacamole.md
+--- a/soup.txt
++++ b/soup.txt
 @@ -1,2 +1,5 @@
  # Ingredients
 +- avocado
