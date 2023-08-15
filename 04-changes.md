@@ -27,17 +27,17 @@ You should be in the `recipes` directory.
 $ cd ~/Desktop/recipes
 ```
 
-Let's create a file called `soup.txt` that contains the basic structure to
+Let's create a file called `guacamole.txt` that contains the basic structure to
 have a recipe.
 We'll use `nano` to edit the file;
 you can use whatever editor you like.
 In particular, this does not have to be the `core.editor` you set globally earlier. But remember, the bash command to create or edit a new file will depend on the editor you choose (it might not be `nano`). For a refresher on text editors, check out ["Which Editor?"](https://swcarpentry.github.io/shell-novice/03-create.html#which-editor) in [The Unix Shell](https://swcarpentry.github.io/shell-novice/) lesson.
 
 ```bash
-$ nano soup.txt
+$ nano guacamole.txt
 ```
 
-Type the text below into the `soup.txt` file:
+Type the text below into the `guacamole.txt` file:
 
 ```output
 Ingredients
@@ -51,13 +51,13 @@ $ ls
 ```
 
 ```output
-soup.txt
+guacamole.txt
 ```
 
-`soup.txt` contains a single line, which we can see by running:
+`guacamole.txt` contains a single line, which we can see by running:
 
 ```bash
-$ cat soup.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -80,7 +80,7 @@ No commits yet
 Untracked files:
    (use "git add <file>..." to include in what will be committed)
 
-	soup.txt
+	guacamole.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -90,7 +90,7 @@ that Git isn't keeping track of.
 We can tell Git to track a file using `git add`:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 ```
 
 and then check that the right thing happened:
@@ -107,11 +107,11 @@ No commits yet
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   soup.txt
+	new file:   guacamole.txt
 
 ```
 
-Git now knows that it's supposed to keep track of `soup.txt`,
+Git now knows that it's supposed to keep track of `guacamole.txt`,
 but it hasn't recorded these changes as a commit yet.
 To get it to do that,
 we need to run one more command:
@@ -123,7 +123,7 @@ $ git commit -m "Create a template for recipe"
 ```output
 [main (root-commit) f22b25e] Create a template for recipe
  1 file changed, 1 insertion(+)
- create mode 100644 soup.txt
+ create mode 100644 guacamole.txt
 ```
 
 When we run `git commit`,
@@ -182,7 +182,7 @@ and the log message Git was given when the commit was created.
 
 ## Where Are My Changes?
 
-If we run `ls` at this point, we will still see just one file called `soup.txt`.
+If we run `ls` at this point, we will still see just one file called `guacamole.txt`.
 That's because Git saves information about files' history
 in the special `.git` directory mentioned earlier
 so that our filesystem doesn't become cluttered
@@ -196,8 +196,8 @@ Now suppose Sarah adds more information to the file.
 you may use a different editor, and don't need to `cat`.)
 
 ```bash
-$ nano soup.txt
-$ cat soup.txt
+$ nano guacamole.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -221,7 +221,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   soup.txt
+	modified:   guacamole.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -242,10 +242,10 @@ $ git diff
 ```
 
 ```output
-diff --git a/soup.txt b/soup.txt
+diff --git a/guacamole.txt b/guacamole.txt
 index df0654a..315bf3a 100644
---- a/soup.txt
-+++ b/soup.txt
+--- a/guacamole.txt
++++ b/guacamole.txt
 @@ -1,2 +1,5 @@
  Ingredients
 +avocado
@@ -283,7 +283,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   soup.txt
+	modified:   guacamole.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -293,7 +293,7 @@ Git won't commit because we didn't use `git add` first.
 Let's fix that:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git commit -m "Add basic soup's ingredients"
 ```
 
@@ -352,8 +352,8 @@ First,
 we'll improve our recipe by changing 'lemon' to 'lime':
 
 ```bash
-$ nano soup.txt
-$ cat soup.txt
+$ nano guacamole.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -369,10 +369,10 @@ $ git diff
 ```
 
 ```output
-diff --git a/soup.txt b/soup.txt
+diff --git a/guacamole.txt b/guacamole.txt
 index 315bf3a..b36abfd 100644
---- a/soup.txt
-+++ b/soup.txt
+--- a/guacamole.txt
++++ b/guacamole.txt
 @@ -1,5 +1,5 @@
  Ingredients
  avocado
@@ -389,7 +389,7 @@ Now let's put that change in the staging area
 and see what `git diff` reports:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git diff
 ```
 
@@ -405,10 +405,10 @@ $ git diff --staged
 ```
 
 ```output
-diff --git a/soup.txt b/soup.txt
+diff --git a/guacamole.txt b/guacamole.txt
 index 315bf3a..b36abfd 100644
---- a/soup.txt
-+++ b/soup.txt
+--- a/guacamole.txt
++++ b/guacamole.txt
 @@ -1,5 +1,5 @@
  Ingredients
  avocado
@@ -611,7 +611,7 @@ repository (`git commit`):
 ## Choosing a Commit Message
 
 Which of the following commit messages would be most appropriate for the
-last commit made to `soup.txt`?
+last commit made to `guacamole.txt`?
 
 1. "Changes"
 2. "Changed lemon for lime"
@@ -675,7 +675,7 @@ to my local Git repository?
 The staging area can hold changes from any number of files
 that you want to commit as a single snapshot.
 
-1. Add some text to `soup.txt` noting the rough price of the
+1. Add some text to `guacamole.txt` noting the rough price of the
   ingredients.
 2. Create a new file `groceries.md` with a list of products and
   their prices for different markets.
@@ -686,11 +686,11 @@ that you want to commit as a single snapshot.
 
 ## Solution
 
-First we make our changes to the `soup.txt` and `groceries.md` files:
+First we make our changes to the `guacamole.txt` and `groceries.md` files:
 
 ```bash
-$ nano soup.txt
-$ cat soup.txt
+$ nano guacamole.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -715,13 +715,13 @@ $ cat groceries.md
 Now you can add both files to the staging area. We can do that in one line:
 
 ```bash
-$ git add soup.txt groceries.md
+$ git add guacamole.txt groceries.md
 ```
 
 Or with multiple commands:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git add groceries.md
 ```
 
