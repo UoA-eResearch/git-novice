@@ -145,8 +145,8 @@ Use a program such as Microsoft Word or LibreOffice Writer to create a new docum
 Enter the same text that we began with before:
 
 ```output
-# Ingredients
-# Instructions
+Ingredients
+Instructions
 ```
 
 Save the document into the `recipes-nontext` directory with the name of `soup.doc`.
@@ -161,11 +161,11 @@ $ git commit -m "Create a template for recipe"
 Then make the same changes to `soup.doc` that we (or Sarah) previously made to `soup.txt`.
 
 ```output
-# Ingredients
-- avocado
-- lemon
-- salt
-# Instructions
+Ingredients
+avocado
+lemon
+salt
+Instructions
 ```
 
 Save and close the word processor.
@@ -189,10 +189,10 @@ index df0654a..315bf3a 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lemon
-+- salt
+ Ingredients
++avocado
++lemon
++salt
  # Instructions
 ```
 

@@ -41,7 +41,6 @@ Type the text below into the `soup.txt` file:
 
 ```output
 Ingredients
-
 Instructions
 ```
 
@@ -63,7 +62,6 @@ $ cat soup.txt
 
 ```output
 Ingredients
-
 Instructions
 ```
 
@@ -204,10 +202,9 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 potato
-10 mushrooms
-
+avocado
+lemon
+salt
 Instructions
 ```
 
@@ -251,10 +248,9 @@ index df0654a..315bf3a 100644
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
  Ingredients
-+4 tomatoes
-+1 potato
-+10 mushrooms
-
++avocado
++lemon
++salt
  Instructions
 ```
 
@@ -353,7 +349,7 @@ Let's watch as our changes to a file move from our editor
 to the staging area
 and into long-term storage.
 First,
-we'll improve our recipe by swapping out the potato with a kumara (sweet potato):
+we'll improve our recipe by changing 'lemon' to 'lime':
 
 ```bash
 $ nano soup.txt
@@ -362,10 +358,9 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
-
+avocado
+lime
+salt
 Instructions
 ```
 
@@ -380,11 +375,10 @@ index 315bf3a..b36abfd 100644
 +++ b/soup.txt
 @@ -1,5 +1,5 @@
  Ingredients
- 4 tomatoes
-- 1 potato
-+ 1 kumara
- 10 mushrooms
-
+ avocado
+-lemon
++lime
+ salt
  Instructions
 ```
 
@@ -417,11 +411,10 @@ index 315bf3a..b36abfd 100644
 +++ b/soup.txt
 @@ -1,5 +1,5 @@
  Ingredients
- 4 tomatoes
-- 1 potato
-+ 1 kumara
- 10 mushrooms
-
+ avocado
+-lemon
++lime
+ salt
  Instructions
 ```
 
@@ -431,11 +424,11 @@ and what's in the staging area.
 Let's save our changes:
 
 ```bash
-$ git commit -m "Add sweetness to soup"
+$ git commit -m "Modify soup to the traditional recipe"
 ```
 
 ```output
-[main 005937f] Add sweetness to soup
+[main 005937f] Modify soup to the traditional recipe
  1 file changed, 1 insertion(+)
 ```
 
@@ -461,7 +454,7 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
 Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Add sweetness to soup
+    Modify soup to the traditional recipe
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Sarah Robertson <s.robertson@researcher.co>
@@ -525,7 +518,7 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
 Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-   Add sweetness to soup
+   Modify soup to the traditional recipe
 ```
 
 You can also reduce the quantity of information using the
@@ -536,7 +529,7 @@ $ git log --oneline
 ```
 
 ```output
-005937f (HEAD -> main) Add sweetness to soup
+005937f (HEAD -> main) Modify soup to the traditional recipe
 34961b1 Add basic soup's ingredients
 f22b25e Create a template for recipe
 ```
@@ -552,7 +545,7 @@ $ git log --oneline --graph
 ```
 
 ```output
-* 005937f (HEAD -> main) Add sweetness to soup
+* 005937f (HEAD -> main) Modify soup to the traditional recipe
 * 34961b1 Add basic soup's ingredients
 * f22b25e Create a template for recipe
 ```
@@ -621,8 +614,8 @@ Which of the following commit messages would be most appropriate for the
 last commit made to `soup.txt`?
 
 1. "Changes"
-2. "Changed potato for kumara"
-3. "Add sweetness to soup"
+2. "Changed lemon for lime"
+3. "soup modified to the traditional recipe"
 
 :::::::::::::::  solution
 
@@ -684,7 +677,7 @@ that you want to commit as a single snapshot.
 
 1. Add some text to `soup.txt` noting the rough price of the
   ingredients.
-2. Create a new file `groceries.txt` with a list of products and
+2. Create a new file `groceries.md` with a list of products and
   their prices for different markets.
 3. Add changes from both files to the staging area,
   and commit those changes.
@@ -693,7 +686,7 @@ that you want to commit as a single snapshot.
 
 ## Solution
 
-First we make our changes to the `soup.txt` and `groceries.txt` files:
+First we make our changes to the `soup.txt` and `groceries.md` files:
 
 ```bash
 $ nano soup.txt
@@ -702,38 +695,34 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
-salt
-pepper
-
-Instructions
+avocado (1.35)
+lime (0.64)
+salt (2)
 ```
 
 ```bash
-$ nano groceries.txt
-$ cat groceries.txt
+$ nano groceries.md
+$ cat groceries.md
 ```
 
 ```output
-Countdown
-tomato: $8 per kg
-kumara: $7 per kg
-mushroom: $14 per kg
+# Market A
+- avocado: 1.35 per unit.
+- lime: 0.64 per unit
+- salt: 2 per kg
 ```
 
 Now you can add both files to the staging area. We can do that in one line:
 
 ```bash
-$ git add soup.txt groceries.txt
+$ git add soup.txt groceries.md
 ```
 
 Or with multiple commands:
 
 ```bash
 $ git add soup.txt
-$ git add groceries.txt
+$ git add groceries.md
 ```
 
 Now the files are ready to commit. You can check that using `git status`. If you are ready to commit use:
@@ -746,7 +735,7 @@ $ git commit -m "Write prices for ingredients and their source"
 [main cc127c2]
  Write prices for ingredients and their source
  2 files changed, 7 insertions(+)
- create mode 100644 groceries.txt
+ create mode 100644 groceries.md
 ```
 
 :::::::::::::::::::::::::

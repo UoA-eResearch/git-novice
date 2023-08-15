@@ -34,12 +34,9 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-
 Instructions
 ```
 
@@ -52,25 +49,22 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-
 Instructions
+put one avocado into a bowl.
 ```
 
 and then push the change to GitHub:
 
 ```bash
 $ git add soup.txt
-$ git commit -m "Make soup more tasty"
+$ git commit -m "First step on the instructions"
 ```
 
 ```output
-[main 5ae9631] Make soup more tasty
+[main 5ae9631] First step on the instructions
  1 file changed, 1 insertion(+)
 ```
 
@@ -101,25 +95,22 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-onion
-
 Instructions
+peel the avocados
 ```
 
 We can commit the change locally:
 
 ```bash
 $ git add soup.txt
-$ git commit -m "Make soup more savoury"
+$ git commit -m "Add first step"
 ```
 
 ```output
-[main 07ebc69] Make soup more savoury
+[main 07ebc69] Add first step
  1 file changed, 1 insertion(+)
 ```
 
@@ -217,18 +208,15 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-<<<<<<< HEAD
-onion
-=======
-garlic
->>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
-
 Instructions
+<<<<<<< HEAD
+- peel the avocados
+=======
+- put one avocado into a bowl.
+>>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
 ```
 
 Our change is preceded by `<<<<<<< HEAD`.
@@ -250,15 +238,11 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-onion
-
 Instructions
+peel the avocados and put them into a bowl.
 ```
 
 To finish merging,
@@ -338,15 +322,11 @@ $ cat soup.txt
 
 ```output
 Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-onion
-
 Instructions
+peel the avocados and put them into a bowl.
 ```
 
 We don't need to merge again because Git knows someone has already done that.
