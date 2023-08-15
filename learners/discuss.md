@@ -54,13 +54,13 @@ $ git config --global alias.co checkout
 Now if we return to the example from [Exploring History](../episodes/05-history.md) where we ran:
 
 ```bash
-$ git checkout f22b25e soup.txt
+$ git checkout f22b25e guacamole.txt
 ```
 
 we could now instead type:
 
 ```bash
-$ git co f22b25e soup.txt
+$ git co f22b25e guacamole.txt
 ```
 
 ## Styling Git's Log
@@ -158,7 +158,7 @@ $ git add soup.doc
 $ git commit -m "Create a template for recipe"
 ```
 
-Then make the same changes to `soup.doc` that we (or Sarah) previously made to `soup.txt`.
+Then make the same changes to `soup.doc` that we (or Sarah) previously made to `guacamole.txt`.
 
 ```output
 Ingredients
@@ -184,10 +184,10 @@ Binary files a/soup.doc and b/soup.doc differ
 Compare this to the earlier `git diff` obtained when using text files:
 
 ```output
-diff --git a/soup.txt b/soup.txt
+diff --git a/guacamole.txt b/guacamole.txt
 index df0654a..315bf3a 100644
---- a/soup.txt
-+++ b/soup.txt
+--- a/guacamole.txt
++++ b/guacamole.txt
 @@ -1,2 +1,5 @@
  Ingredients
 +avocado
