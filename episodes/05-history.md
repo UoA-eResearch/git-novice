@@ -35,12 +35,15 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-An ill-considered change
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+
+Instructions
+Chop all ingredients, put in a pot. Cover with water, boil for 30 minutes. Mash and season to taste.
 ```
 
 Now, let's see what we get.
@@ -55,10 +58,15 @@ index b36abfd..0848c8d 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -3,3 +3,4 @@
- - lime
- - salt
- # Instructions
-+An ill-considered change
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+ 
+ Instructions
++Chop all ingredients, put in a pot. Cover with water, boil for 30 minutes. Mash and season to taste.
 ```
 
 which is the same as what you would get if you leave out `HEAD` (try it).  The
@@ -84,11 +92,15 @@ index df0654a..b36abfd 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
+Ingredients
++4 tomatoes
++1 potato
++10 mushrooms
++salt
++pepper
+
+Instructions
++Chop all ingredients, put in a pot. Cover with water, boil for 30 minutes. Mash and season to taste.
 ```
 
 We could also use `git show` which shows us what changes we made at an older commit as
@@ -145,12 +157,15 @@ index df0654a..93a3e13 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
-+An ill-considered change
+Ingredients
++4 tomatoes
++1 potato
++10 mushrooms
++salt
++pepper
+
+Instructions
++Chop all ingredients, put in a pot. Cover with water, boil for 30 minutes. Mash and season to taste.
 ```
 
 That's the right answer,
@@ -167,12 +182,15 @@ index df0654a..93a3e13 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
-+An ill-considered change
+Ingredients
++4 tomatoes
++1 potato
++10 mushrooms
++salt
++pepper
+
+Instructions
++Chop all ingredients, put in a pot. Cover with water, boil for 30 minutes. Mash and season to taste.
 ```
 
 All right! So
@@ -208,11 +226,14 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+
+Instructions
 ```
 
 As you might guess from its name,
@@ -232,8 +253,8 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-# Instructions
+Ingredients
+Instructions
 ```
 
 ```bash

@@ -33,11 +33,14 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+
+Instructions
 ```
 
 Let's add a line to the collaborator's copy only:
@@ -48,23 +51,26 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- put one avocado into a bowl.
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+garlic
+
+Instructions
 ```
 
 and then push the change to GitHub:
 
 ```bash
 $ git add soup.txt
-$ git commit -m "First step on the instructions"
+$ git commit -m "Make soup more tasty"
 ```
 
 ```output
-[main 5ae9631] First step on the instructions
+[main 5ae9631] Make soup more tasty
  1 file changed, 1 insertion(+)
 ```
 
@@ -94,23 +100,26 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+onion
+
+Instructions
 ```
 
 We can commit the change locally:
 
 ```bash
 $ git add soup.txt
-$ git commit -m "Add first step"
+$ git commit -m "Make soup more savoury"
 ```
 
 ```output
-[main 07ebc69] Add first step
+[main 07ebc69] Make soup more savoury
  1 file changed, 1 insertion(+)
 ```
 
@@ -207,16 +216,19 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
 <<<<<<< HEAD
-- peel the avocados
+onion
 =======
-- put one avocado into a bowl.
+garlic
 >>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
+
+Instructions
 ```
 
 Our change is preceded by `<<<<<<< HEAD`.
@@ -237,12 +249,16 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados and put them into a bowl.
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+garlic
+onion
+
+Instructions
 ```
 
 To finish merging,
@@ -321,12 +337,16 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados and put them into a bowl.
+Ingredients
+4 tomatoes
+1 kumara
+10 mushrooms
+salt
+pepper
+garlic
+onion
+
+Instructions
 ```
 
 We don't need to merge again because Git knows someone has already done that.

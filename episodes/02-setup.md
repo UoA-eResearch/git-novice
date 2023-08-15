@@ -230,11 +230,11 @@ Since they don't exist on Sarah's computer, she uses this command to create them
 To create an SSH key pair Sarah uses this command, where the `-t` option specifies which type of algorithm to use and `-C` attaches a comment to the key. Replace Sarah's email address with yours.
 
 ```bash
-$ ssh-keygen -t ed25519 -C "srobertson@researcher.co"
+$ ssh-keygen -t ed25519 -C "s.robertson@researcher.co"
 ```
 
 If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
-`$ ssh-keygen -t rsa -b 4096 -C "srobertson@researcher.co"`
+`$ ssh-keygen -t rsa -b 4096 -C "s.robertson@researcher.co"`
 
 ```output
 Generating public/private ed25519 key pair.
@@ -260,7 +260,7 @@ After entering the same passphrase a second time, we receive the confirmation
 Your identification has been saved in /c/Users/Sarah/.ssh/id_ed25519
 Your public key has been saved in /c/Users/Sarah/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o srobertson@researcher.co
+SHA256:SMSPIStNyA00KPxuYu94KpZgRAYjgt9g4BA4kFy3g1o s.robertson@researcher.co
 The key's randomart image is:
 +--[ED25519 256]--+
 |^B== o.          |
@@ -302,7 +302,7 @@ cat ~/.ssh/id_ed25519.pub
 ```
 
 ```output
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDmRA3d51X0uu9wXek559gfn6UFNF69yZjChyBIU2qKI srobertson@researcher.co
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDmRA3d51X0uu9wXek559gfn6UFNF69yZjChyBIU2qKI s.robertson@researcher.co
 ```
 
 Select the output and copy it.
