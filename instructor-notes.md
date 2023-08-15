@@ -150,7 +150,7 @@ working in teams or not, because it is
   skip it because you're short on time, show it once in GitHub.
 
 - One thing may cause confusion is recovering old versions.  If, instead of
-  doing `$ git checkout f22b25e guacamole.md`, someone does `$ git checkout f22b25e`, they wind up in the "detached HEAD" state and confusion abounds.
+  doing `$ git checkout f22b25e soup.txt`, someone does `$ git checkout f22b25e`, they wind up in the "detached HEAD" state and confusion abounds.
   It's then possible to keep on committing, but things like `git push origin main` a bit later will not give easily comprehensible results.  It also
   makes it look like commits can be lost.  To "re-attach" HEAD, use
   `git checkout main`.

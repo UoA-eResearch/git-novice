@@ -3,7 +3,8 @@ permalink: index.html
 site: sandpaper::sandpaper_site
 ---
 
-Kai and Sarah want to collaborate on writing a recipe together, but they have run into
+Kai and Sarah are aspiring cookbook authors. They are each writing a cookbook,
+and want to collaborate on writing one of the recipes, but they have run into
 problems doing this in the past.  If they take turns, each one will
 spend a lot of time waiting for the other to finish, but if they work
 on their own copies and email changes back and forth things will be
