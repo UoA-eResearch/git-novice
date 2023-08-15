@@ -40,8 +40,8 @@ $ nano soup.txt
 Type the text below into the `soup.txt` file:
 
 ```output
-# Ingredients
-# Instructions
+Ingredients
+Instructions
 ```
 
 Let's first verify that the file was properly created by running the list command (`ls`):
@@ -61,8 +61,8 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-# Instructions
+Ingredients
+Instructions
 ```
 
 If we check the status of our project again,
@@ -163,7 +163,7 @@ $ git log
 
 ```output
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Sarah Linguini <a.linguini@ratatouille.fr>
+Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 09:51:46 2013 -0400
 
     Create a template for recipe
@@ -201,11 +201,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lemon
-- salt
-# Instructions
+Ingredients
+avocado
+lemon
+salt
+Instructions
 ```
 
 When we run `git status` now,
@@ -247,11 +247,11 @@ index df0654a..315bf3a 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lemon
-+- salt
- # Instructions
+ Ingredients
++avocado
++lemon
++salt
+ Instructions
 ```
 
 The output is cryptic because
@@ -357,11 +357,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+avocado
+lime
+salt
+Instructions
 ```
 
 ```bash
@@ -374,12 +374,12 @@ index 315bf3a..b36abfd 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,5 +1,5 @@
- # Ingredients
- - avocado
--- lemon
-+- lime
- - salt
- # Instructions
+ Ingredients
+ avocado
+-lemon
++lime
+ salt
+ Instructions
 ```
 
 So far, so good:
@@ -410,12 +410,12 @@ index 315bf3a..b36abfd 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,5 +1,5 @@
- # Ingredients
- - avocado
--- lemon
-+- lime
- - salt
- # Instructions
+ Ingredients
+ avocado
+-lemon
++lime
+ salt
+ Instructions
 ```
 
 it shows us the difference between
@@ -694,10 +694,10 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado (1.35)
-- lime (0.64)
-- salt (2)
+Ingredients
+avocado (1.35)
+lime (0.64)
+salt (2)
 ```
 
 ```bash

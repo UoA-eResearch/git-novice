@@ -35,11 +35,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+avocado
+lime
+salt
+Instructions
 An ill-considered change
 ```
 
@@ -84,11 +84,11 @@ index df0654a..b36abfd 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
+ Ingredients
++avocado
++lime
++salt
+ Instructions
 ```
 
 We could also use `git show` which shows us what changes we made at an older commit as
@@ -112,8 +112,8 @@ index 0000000..df0654a
 --- /dev/null
 +++ b/soup.txt
 @@ -0,0 +1,2 @@
-+# Ingredients
-+# Instructions
++Ingredients
++Instructions
 ```
 
 In this way,
@@ -145,11 +145,11 @@ index df0654a..93a3e13 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
+ Ingredients
++avocado
++lime
++salt
+ Instructions
 +An ill-considered change
 ```
 
@@ -167,11 +167,11 @@ index df0654a..93a3e13 100644
 --- a/soup.txt
 +++ b/soup.txt
 @@ -1,2 +1,5 @@
- # Ingredients
-+- avocado
-+- lime
-+- salt
- # Instructions
+ Ingredients
++avocado
++lime
++salt
+ Instructions
 +An ill-considered change
 ```
 
@@ -208,11 +208,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+avocado
+lime
+salt
+Instructions
 ```
 
 As you might guess from its name,
@@ -232,8 +232,8 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-# Instructions
+Ingredients
+Instructions
 ```
 
 ```bash

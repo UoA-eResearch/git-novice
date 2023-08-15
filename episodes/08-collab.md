@@ -72,26 +72,25 @@ exactly the same way as we've been doing before:
 
 ```bash
 $ cd ~/Desktop/srobertson-recipes
-$ nano hummus.md
-$ cat hummus.md
+$ nano soup.txt
+$ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- chickpeas
-- lemon
-- olive oil
-- salt
+Ingredients
+broccoli
+celery
+onion
 ```
 
 ```bash
-$ git add hummus.md
-$ git commit -m "Add ingredients for hummus"
+$ git add soup.txt
+$ git commit -m "Add ingredients for soup"
 ```
 
 ```output
  1 file changed, 5 insertion(+)
- create mode 100644 hummus.md
+ create mode 100644 soup.txt
 ```
 
 Then push the change to the *Owner's repository* on GitHub:
@@ -172,9 +171,9 @@ From https://github.com/srobertson/recipes
    9272da5..29aba7c  main     -> origin/main
 Updating 9272da5..29aba7c
 Fast-forward
- hummus.md | 5 +
+ soup.txt | 5 +
  1 file changed, 5 insertion(+)
- create mode 100644 hummus.md
+ create mode 100644 soup.txt
 ```
 
 Now the three repositories (Owner's local, Collaborator's local, and Owner's on

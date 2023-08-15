@@ -33,11 +33,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+avocado
+lime
+salt
+Instructions
 ```
 
 Let's add a line to the collaborator's copy only:
@@ -48,12 +48,12 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- put one avocado into a bowl.
+Ingredients
+avocado
+lime
+salt
+Instructions
+put one avocado into a bowl.
 ```
 
 and then push the change to GitHub:
@@ -94,12 +94,12 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados
+Ingredients
+avocado
+lime
+salt
+Instructions
+peel the avocados
 ```
 
 We can commit the change locally:
@@ -207,11 +207,11 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
+Ingredients
+avocado
+lime
+salt
+Instructions
 <<<<<<< HEAD
 - peel the avocados
 =======
@@ -237,12 +237,12 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados and put them into a bowl.
+Ingredients
+avocado
+lime
+salt
+Instructions
+peel the avocados and put them into a bowl.
 ```
 
 To finish merging,
@@ -321,12 +321,12 @@ $ cat soup.txt
 ```
 
 ```output
-# Ingredients
-- avocado
-- lime
-- salt
-# Instructions
-- peel the avocados and put them into a bowl.
+Ingredients
+avocado
+lime
+salt
+Instructions
+peel the avocados and put them into a bowl.
 ```
 
 We don't need to merge again because Git knows someone has already done that.
