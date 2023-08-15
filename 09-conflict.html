@@ -367,14 +367,11 @@ copies of our <code>recipes</code> repository:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
-salt
-pepper
-
-Instructions</code></pre>
+<pre class="output" tabindex="0"><code><span><span class="va">Ingredients</span></span>
+<span><span class="va">avocado</span></span>
+<span><span class="va">lime</span></span>
+<span><span class="va">salt</span></span>
+<span><span class="va">Instructions</span></span></code></pre>
 </div>
 <p>Let’s add a line to the collaborator’s copy only:</p>
 <div class="codewrapper sourceCode" id="cb3">
@@ -387,26 +384,23 @@ Instructions</code></pre>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-
-Instructions</code></pre>
+Instructions
+put one avocado into a bowl.</code></pre>
 </div>
 <p>and then push the change to GitHub:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add soup.txt</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Make soup more tasty"</span></span></code></pre>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"First step on the instructions"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[main 5ae9631] Make soup more tasty
+<pre class="output" tabindex="0"><code>[main 5ae9631] First step on the instructions
  1 file changed, 1 insertion(+)</code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb7">
@@ -439,26 +433,23 @@ To https://github.com/srobertson/recipes.git
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-onion
-
-Instructions</code></pre>
+Instructions
+peel the avocados</code></pre>
 </div>
 <p>We can commit the change locally:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add soup.txt</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Make soup more savoury"</span></span></code></pre>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add first step"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[main 07ebc69] Make soup more savoury
+<pre class="output" tabindex="0"><code>[main 07ebc69] Add first step
  1 file changed, 1 insertion(+)</code></pre>
 </div>
 <p>but Git won’t let us push it to GitHub:</p>
@@ -563,18 +554,15 @@ affected file:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
+Instructions
 &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-onion
+- peel the avocados
 =======
-garlic
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; dabb4c8c450e8475aee9b14b4383acc99f42af1d
-
-Instructions</code></pre>
+- put one avocado into a bowl.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; dabb4c8c450e8475aee9b14b4383acc99f42af1d</code></pre>
 </div>
 <p>Our change is preceded by
 <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>. Git has then inserted
@@ -597,15 +585,11 @@ Let’s replace both so that the file looks like this:</p>
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-onion
-
-Instructions</code></pre>
+Instructions
+peel the avocados and put them into a bowl.</code></pre>
 </div>
 <p>To finish merging, we add <code>soup.txt</code> to the changes being
 made by the merge and then commit:</p>
@@ -690,15 +674,11 @@ Fast-forward
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="output" tabindex="0"><code>Ingredients
-4 tomatoes
-1 kumara
-10 mushrooms
+avocado
+lime
 salt
-pepper
-garlic
-onion
-
-Instructions</code></pre>
+Instructions
+peel the avocados and put them into a bowl.</code></pre>
 </div>
 <p>We don’t need to merge again because Git knows someone has already
 done that.</p>
@@ -764,7 +744,7 @@ non-textual file that is stored in version control?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Let’s try it. Suppose Sarah takes a picture of its soup and calls it
 <code>soup.jpg</code>.</p>
@@ -983,7 +963,7 @@ started.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <table class="table"><colgroup><col width="6%"><col width="34%"><col width="59%"></colgroup><thead><tr class="header"><th>order</th>
 <th>action . . . . . .</th>
