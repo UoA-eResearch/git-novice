@@ -25,11 +25,11 @@ different changes to each copy.  Version control helps us manage these
 [resolve](../learners/reference.md#resolve) overlapping changes.
 
 To see how we can resolve conflicts, we must first create one.  The file
-`soup.txt` currently looks like this in both partners' copies of our `recipes`
+`guacamole.txt` currently looks like this in both partners' copies of our `recipes`
 repository:
 
 ```bash
-$ cat soup.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -43,8 +43,8 @@ Instructions
 Let's add a line to the collaborator's copy only:
 
 ```bash
-$ nano soup.txt
-$ cat soup.txt
+$ nano guacamole.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -59,7 +59,7 @@ put one avocado into a bowl.
 and then push the change to GitHub:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git commit -m "First step on the instructions"
 ```
 
@@ -89,8 +89,8 @@ make a different change to their copy
 *without* updating from GitHub:
 
 ```bash
-$ nano soup.txt
-$ cat soup.txt
+$ nano guacamole.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -105,7 +105,7 @@ peel the avocados
 We can commit the change locally:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git commit -m "Add first step"
 ```
 
@@ -152,8 +152,8 @@ Unpacking objects: 100% (3/3), done.
 From https://github.com/srobertson/recipes
  * branch            main     -> FETCH_HEAD
     29aba7c..dabb4c8  main     -> origin/main
-Auto-merging soup.txt
-CONFLICT (content): Merge conflict in soup.txt
+Auto-merging guacamole.txt
+CONFLICT (content): Merge conflict in guacamole.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
@@ -203,7 +203,7 @@ stop us from trampling on our previous work. The conflict is marked in
 in the affected file:
 
 ```bash
-$ cat soup.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -233,7 +233,7 @@ or get rid of the change entirely.
 Let's replace both so that the file looks like this:
 
 ```bash
-$ cat soup.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -246,11 +246,11 @@ peel the avocados and put them into a bowl.
 ```
 
 To finish merging,
-we add `soup.txt` to the changes being made by the merge
+we add `guacamole.txt` to the changes being made by the merge
 and then commit:
 
 ```bash
-$ git add soup.txt
+$ git add guacamole.txt
 $ git status
 ```
 
@@ -261,7 +261,7 @@ All conflicts fixed but you are still merging.
 
 Changes to be committed:
 
-	modified:   soup.txt
+	modified:   guacamole.txt
 
 ```
 
@@ -310,14 +310,14 @@ From https://github.com/srobertson/recipes
     dabb4c8..2abf2b1  main     -> origin/main
 Updating dabb4c8..2abf2b1
 Fast-forward
- soup.txt | 2 +-
+ guacamole.txt | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
 We get the merged file:
 
 ```bash
-$ cat soup.txt
+$ cat guacamole.txt
 ```
 
 ```output
@@ -378,39 +378,39 @@ that is stored in version control?
 
 ## Solution
 
-Let's try it. Suppose Sarah takes a picture of its soup and
-calls it `soup.jpg`.
+Let's try it. Suppose Sarah takes a picture of its guacamole and
+calls it `guacamole.jpg`.
 
-If you do not have an image file of soup available, you can create
+If you do not have an image file of guacamole available, you can create
 a dummy binary file like this:
 
 ```bash
-$ head --bytes 1024 /dev/urandom > soup.jpg
-$ ls -lh soup.jpg
+$ head --bytes 1024 /dev/urandom > guacamole.jpg
+$ ls -lh guacamole.jpg
 ```
 
 ```output
--rw-r--r-- 1 srobertson 57095 1.0K Mar  8 20:24 soup.jpg
+-rw-r--r-- 1 srobertson 57095 1.0K Mar  8 20:24 guacamole.jpg
 ```
 
 `ls` shows us that this created a 1-kilobyte file. It is full of
 random bytes read from the special file, `/dev/urandom`.
 
-Now, suppose Sarah adds `soup.jpg` to her repository:
+Now, suppose Sarah adds `guacamole.jpg` to her repository:
 
 ```bash
-$ git add soup.jpg
-$ git commit -m "Add picture of soup"
+$ git add guacamole.jpg
+$ git commit -m "Add picture of guacamole"
 ```
 
 ```output
-[main 8e4115c] Add picture of soup
+[main 8e4115c] Add picture of guacamole
  1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 soup.jpg
+ create mode 100644 guacamole.jpg
 ```
 
 Suppose that Kai has added a similar picture in the meantime.
-It is a picture of a soup with nachos, but it is *also* called `soup.jpg`.
+It is a picture of a guacamole with nachos, but it is *also* called `guacamole.jpg`.
 When Sarah tries to push, she gets a familiar message:
 
 ```bash
@@ -446,17 +446,17 @@ Unpacking objects: 100% (3/3), done.
 From https://github.com/srobertson/recipes.git
  * branch            main     -> FETCH_HEAD
    6a67967..439dc8c  main     -> origin/main
-warning: Cannot merge binary files: soup.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
-Auto-merging soup.jpg
-CONFLICT (add/add): Merge conflict in soup.jpg
+warning: Cannot merge binary files: guacamole.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
+Auto-merging guacamole.jpg
+CONFLICT (add/add): Merge conflict in guacamole.jpg
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-The conflict message here is mostly the same as it was for `soup.txt`, but
+The conflict message here is mostly the same as it was for `guacamole.txt`, but
 there is one key additional line:
 
 ```output
-warning: Cannot merge binary files: soup.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
+warning: Cannot merge binary files: guacamole.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
 ```
 
 Git cannot automatically insert conflict markers into an image as it does
@@ -464,31 +464,31 @@ for text files. So, instead of editing the image file, we must check out
 the version we want to keep. Then we can add and commit this version.
 
 On the key line above, Git has conveniently given us commit identifiers
-for the two versions of `soup.jpg`. Our version is `HEAD`, and Kai's
+for the two versions of `guacamole.jpg`. Our version is `HEAD`, and Kai's
 version is `439dc8c0...`. If we want to use our version, we can use
 `git checkout`:
 
 ```bash
-$ git checkout HEAD soup.jpg
-$ git add soup.jpg
-$ git commit -m "Use image of just soup instead of with nachos"
+$ git checkout HEAD guacamole.jpg
+$ git add guacamole.jpg
+$ git commit -m "Use image of just guacamole instead of with nachos"
 ```
 
 ```output
-[main 21032c3] Use image of just soup instead of with nachos
+[main 21032c3] Use image of just guacamole instead of with nachos
 ```
 
 If instead we want to use Kai's version, we can use `git checkout` with
 Kai's commit identifier, `439dc8c0`:
 
 ```bash
-$ git checkout 439dc8c0 soup.jpg
-$ git add soup.jpg
-$ git commit -m "Use image of soup with nachos instead of just soup"
+$ git checkout 439dc8c0 guacamole.jpg
+$ git add guacamole.jpg
+$ git commit -m "Use image of guacamole with nachos instead of just guacamole"
 ```
 
 ```output
-[main da21b34] Use image of soup with nachos instead of just soup
+[main da21b34] Use image of guacamole with nachos instead of just guacamole
 ```
 
 We can also keep *both* images. The catch is that we cannot keep them
@@ -497,29 +497,29 @@ and *rename* it, then add the renamed versions. First, check out each
 image and rename it:
 
 ```bash
-$ git checkout HEAD soup.jpg
-$ git mv soup.jpg soup-only.jpg
-$ git checkout 439dc8c0 soup.jpg
-$ mv soup.jpg soup-nachos.jpg
+$ git checkout HEAD guacamole.jpg
+$ git mv guacamole.jpg guacamole-only.jpg
+$ git checkout 439dc8c0 guacamole.jpg
+$ mv guacamole.jpg guacamole-nachos.jpg
 ```
 
-Then, remove the old `soup.jpg` and add the two new files:
+Then, remove the old `guacamole.jpg` and add the two new files:
 
 ```bash
-$ git rm soup.jpg
-$ git add soup-only.jpg
-$ git add soup-nachos.jpg
-$ git commit -m "Use two images: just soup and with nachos"
+$ git rm guacamole.jpg
+$ git add guacamole-only.jpg
+$ git add guacamole-nachos.jpg
+$ git commit -m "Use two images: just guacamole and with nachos"
 ```
 
 ```output
-[main 94ae08c] Use two images: just soup and with nachos
+[main 94ae08c] Use two images: just guacamole and with nachos
  2 files changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 soup-nachos.jpg
- rename soup.jpg => soup-only.jpg (100%)
+ create mode 100644 guacamole-nachos.jpg
+ rename guacamole.jpg => guacamole-only.jpg (100%)
 ```
 
-Now both images of soup are checked into the repository, and `soup.jpg`
+Now both images of guacamole are checked into the repository, and `guacamole.jpg`
 no longer exists.
 
 
