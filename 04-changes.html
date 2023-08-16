@@ -315,7 +315,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Tracking Changes</h1>
-        <p> Last updated on 2023-08-15 | 
+        <p> Last updated on 2023-08-16 | 
         
         <a href="https://github.com/swcarpentry/git-novice/edit/main/episodes/04-changes.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         
@@ -627,7 +627,7 @@ line.</li>
 <div class="codewrapper sourceCode" id="cb25">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic soup ingredients"</span></span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic guacamole ingredients"</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git status</span></code></pre>
 </div>
 <div class="codewrapper">
@@ -648,12 +648,12 @@ first. Let’s fix that:</p>
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git add guacamole.txt</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic soup's ingredients"</span></span></code></pre>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add basic guacamole's ingredients"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[main 34961b1] Add basic soup's ingredient
+<pre class="output" tabindex="0"><code>[main 34961b1] Add basic guacamole's ingredient
  1 file changed, 3 insertions(+)</code></pre>
 </div>
 <p>Git insists that we add files to the set we want to commit before
@@ -766,12 +766,12 @@ what’s in the staging area. Let’s save our changes:</p>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Modify soup to the traditional recipe"</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Modify guacamole to the traditional recipe"</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[main 005937f] Modify soup to the traditional recipe
+<pre class="output" tabindex="0"><code>[main 005937f] Modify guacamole to the traditional recipe
  1 file changed, 1 insertion(+)</code></pre>
 </div>
 <p>check our status:</p>
@@ -799,13 +799,13 @@ nothing to commit, working tree clean</code></pre>
 Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Modify soup to the traditional recipe
+    Modify guacamole to the traditional recipe
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add basic soup's ingredients
+    Add basic guacamole's ingredients
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
@@ -874,7 +874,7 @@ commit you can use:</p>
 Author: Sarah Robertson &lt;s.robertson@researcher.co&gt;
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-   Modify soup to the traditional recipe</code></pre>
+   Modify guacamole to the traditional recipe</code></pre>
 </div>
 <p>You can also reduce the quantity of information using the
 <code>--oneline</code> option:</p>
@@ -886,8 +886,8 @@ Date:   Thu Aug 22 10:14:07 2013 -0400
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>005937f (HEAD -&gt; main) Modify soup to the traditional recipe
-34961b1 Add basic soup's ingredients
+<pre class="output" tabindex="0"><code>005937f (HEAD -&gt; main) Modify guacamole to the traditional recipe
+34961b1 Add basic guacamole's ingredients
 f22b25e Create a template for recipe</code></pre>
 </div>
 <p>You can also combine the <code>--oneline</code> option with others.
@@ -904,8 +904,8 @@ Git references</a>:</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>* 005937f (HEAD -&gt; main) Modify soup to the traditional recipe
-* 34961b1 Add basic soup's ingredients
+<pre class="output" tabindex="0"><code>* 005937f (HEAD -&gt; main) Modify guacamole to the traditional recipe
+* 34961b1 Add basic guacamole's ingredients
 * f22b25e Create a template for recipe</code></pre>
 </div>
 </div>
@@ -979,7 +979,7 @@ and then commit the staged changes to the repository
 the last commit made to <code>guacamole.txt</code>?</p>
 <ol style="list-style-type: decimal"><li>“Changes”</li>
 <li>“Changed lemon for lime”</li>
-<li>“soup modified to the traditional recipe”</li>
+<li>“Guacamole modified to the traditional recipe”</li>
 </ol></div>
 </div>
 </div>
@@ -1291,8 +1291,8 @@ the local repository.</li>
   "url": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "identifier": "https://swcarpentry.github.io/git-novice/04-changes.html",
   "dateCreated": "2014-12-04",
-  "dateModified": "2023-08-15",
-  "datePublished": "2023-08-15"
+  "dateModified": "2023-08-16",
+  "datePublished": "2023-08-16"
 }
 
   </script><script>
