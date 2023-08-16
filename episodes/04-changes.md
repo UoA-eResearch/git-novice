@@ -273,7 +273,7 @@ If we break it down into pieces:
 After reviewing our change, it's time to commit it:
 
 ```bash
-$ git commit -m "Add basic soup ingredients"
+$ git commit -m "Add basic guacamole ingredients"
 $ git status
 ```
 
@@ -294,11 +294,11 @@ Let's fix that:
 
 ```bash
 $ git add guacamole.txt
-$ git commit -m "Add basic soup's ingredients"
+$ git commit -m "Add basic guacamole's ingredients"
 ```
 
 ```output
-[main 34961b1] Add basic soup's ingredient
+[main 34961b1] Add basic guacamole's ingredient
  1 file changed, 3 insertions(+)
 ```
 
@@ -424,11 +424,11 @@ and what's in the staging area.
 Let's save our changes:
 
 ```bash
-$ git commit -m "Modify soup to the traditional recipe"
+$ git commit -m "Modify guacamole to the traditional recipe"
 ```
 
 ```output
-[main 005937f] Modify soup to the traditional recipe
+[main 005937f] Modify guacamole to the traditional recipe
  1 file changed, 1 insertion(+)
 ```
 
@@ -454,13 +454,13 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
 Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-    Modify soup to the traditional recipe
+    Modify guacamole to the traditional recipe
 
 commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
 Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:07:21 2013 -0400
 
-    Add basic soup's ingredients
+    Add basic guacamole's ingredients
 
 commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
 Author: Sarah Robertson <s.robertson@researcher.co>
@@ -518,7 +518,7 @@ commit 005937fbe2a98fb83f0ade869025dc2636b4dad5 (HEAD -> main)
 Author: Sarah Robertson <s.robertson@researcher.co>
 Date:   Thu Aug 22 10:14:07 2013 -0400
 
-   Modify soup to the traditional recipe
+   Modify guacamole to the traditional recipe
 ```
 
 You can also reduce the quantity of information using the
@@ -529,8 +529,8 @@ $ git log --oneline
 ```
 
 ```output
-005937f (HEAD -> main) Modify soup to the traditional recipe
-34961b1 Add basic soup's ingredients
+005937f (HEAD -> main) Modify guacamole to the traditional recipe
+34961b1 Add basic guacamole's ingredients
 f22b25e Create a template for recipe
 ```
 
@@ -545,8 +545,8 @@ $ git log --oneline --graph
 ```
 
 ```output
-* 005937f (HEAD -> main) Modify soup to the traditional recipe
-* 34961b1 Add basic soup's ingredients
+* 005937f (HEAD -> main) Modify guacamole to the traditional recipe
+* 34961b1 Add basic guacamole's ingredients
 * f22b25e Create a template for recipe
 ```
 
@@ -615,7 +615,7 @@ last commit made to `guacamole.txt`?
 
 1. "Changes"
 2. "Changed lemon for lime"
-3. "soup modified to the traditional recipe"
+3. "Guacamole modified to the traditional recipe"
 
 :::::::::::::::  solution
 
