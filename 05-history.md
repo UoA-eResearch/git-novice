@@ -444,23 +444,23 @@ What is the output of the last command in
 
 ```bash
 $ cd recipes
-$ echo "I like tomatos, therefore I like ketchup" > ketchup.md
-$ git add ketchup.md
-$ echo "ketchup enchances pasta dishes" > ketchup.md
+$ echo "I like tomatoes, therefore I like ketchup" > ketchup.txt
+$ git add ketchup.txt
+$ echo "ketchup enchances pasta dishes" > ketchup.txt
 $ git commit -m "my opinions about the red sauce"
-$ git checkout HEAD ketchup.md
-$ cat ketchup.md # this will print the content of ketchup.md on screen
+$ git checkout HEAD ketchup.txt
+$ cat ketchup.txt # this will print the content of ketchup.txt on screen
 ```
 
 1. ```output
   ketchup enchances pasta dishes
   ```
 2. ```output
-  I like tomatos, therefore I like ketchup
+  I like tomatoes, therefore I like ketchup
   ```
 3. ```output
-  I like tomatos, therefore I like ketchup
-  ketchup enchances pasta dishes
+  I like tomatoes, therefore I like ketchup
+  ketchup enhances pasta dishes
   ```
 4. ```output
   Error because you have changed ketchup.md without committing the changes
@@ -473,18 +473,18 @@ $ cat ketchup.md # this will print the content of ketchup.md on screen
 The answer is 2.
 
 The changes to the file from the second `echo` command are only applied to the working copy,
-The command `git add ketchup.md` places the current version of `ketchup.md` into the staging area.
+The command `git add ketchup.txt` places the current version of `ketchup.txt` into the staging area.
 not the version in the staging area.
 
 So, when `git commit -m "my opinions about the red sauce"` is executed,
-the version of `ketchup.md` committed to the repository is the one from the staging area and
+the version of `ketchup.txt` committed to the repository is the one from the staging area and
 has only one line.
 
 At this time, the working copy still has the second line (and
 
-`git status` will show that the file is modified). However, `git checkout HEAD ketchup.md`
-replaces the working copy with the most recently committed version of `ketchup.md`.
-So, `cat ketchup.md` will output
+`git status` will show that the file is modified). However, `git checkout HEAD ketchup.txt`
+replaces the working copy with the most recently committed version of `ketchup.txt`.
+So, `cat ketchup.txt` will output
 
 ```output
 I like tomatos, therefore I like ketchup
