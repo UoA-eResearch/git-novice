@@ -99,7 +99,7 @@ git version
 
 <details>
 <summary> Git installation on Linux </summary>
-- Your version of MacOS may have come with Git pre-installed, you can check with the command: 
+- Your Linux Distribution may have come with Git pre-installed, you can check with the command: 
 
 ```bash
 git version
