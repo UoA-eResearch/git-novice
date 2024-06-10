@@ -9,12 +9,9 @@ title: Setup
 This workshop relies on an installation of Git.
 Follow these instructions for installing git for various operating systems.
 
-
+### Windows
 <details>
 <summary> Git installation on Windows </summary>
-
-
-### Windows
 
 
 1. Download the [Git for Windows installer](https://gitforwindows.org/).
@@ -35,38 +32,41 @@ Follow these instructions for installing git for various operating systems.
 3. If your "HOME" environment variable is not set (or you don't know what this is):
    1. Open command prompt (Open Start Menu then type cmd and press Enter)
    2. Type the following line into the command prompt window exactly as shown:
-   ```bash
-   $ setx HOME "%USERPROFILE%"
-   ```
-   3. Press Enter, you should see SUCCESS: Specified value was saved.
+
+```bash
+$ setx HOME "%USERPROFILE%"
+```
+
+   3. Press Enter, you should see:
+   ```SUCCESS: Specified value was saved```
    4. Quit command prompt by typing `exit` then pressing Enter
 
 
 #### Video Tutorial
 
+[![video tutorial](https://img.youtube.com/vi/339AEqk9c-8/hqdefault.jpg)](https://www.youtube.com/embed/339AEqk9c-8)
 
-https://youtu.be/339AEqk9c-8
 
 
 </details>
 
+### MacOS
 
 <details>
 <summary> Git installation on MacOS </summary>
 
-### MacOS
 
-If your version of MacOS does not already have `Git` installed (you can check this using the command `git version`) you can install git using the package manager [Homebrew](https://brew.sh/).
+- If your version of MacOS does not already have `Git` installed (you can check this using the command `git version`) you can install git using the package manager [Homebrew](https://brew.sh/).
 
 
-If you do not already have it Homebrew provides an installation script that can be run by typing the following command into the terminal:
+- If you do not already have it Homebrew provides an installation script that can be run by typing the following command into the terminal:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-The script explains what it will do and then pauses before it does it.
+- The script explains what it will do and then pauses before it does it.
 
 
-Once you have Homebrew installed do the following to install git:
+- Once you have Homebrew installed do the following to install git:
 
 
 1. Open up a terminal window and install Git using the following command: `brew install git`
@@ -77,15 +77,13 @@ Once you have Homebrew installed do the following to install git:
 
 </details>
 
+### Linux
 
 <details>
 <summary> Git installation on Linux </summary>
 
 
-### Linux
-
-
-If Git is not already available on your machine (you can check this using the command `git version`) you can install it via your distro's package manager. For example on Debian/Ubuntu run `sudo apt-get install git` or for Fedora run `sudo dnf install git`.
+- If Git is not already available on your machine (you can check this using the command `git version`) you can install it via your distro's package manager. For example on Debian/Ubuntu run `sudo apt-get install git` or for Fedora run `sudo dnf install git`.
 
 
 
@@ -108,13 +106,13 @@ $ cd Documents
 
 
 ## Creating a GitHub account
-You will also need an account at [github.com](https://github.com/)  Basic GitHub accounts are free. We encourage you to create a GitHub account if you don't have one already.
+You will also need an account at [github.com](https://github.com/)  Basic GitHub accounts are free. This workshop requires you to create a GitHub account if you don't have one already.
 
 
 To Create a GitHub account go to [github.com](https://github.com/) select *Sign up for GitHub* with the email address you wish to use filled and follow the prompts on screen.
 
 
-Please consider what personal information you'd like to reveal. For example, you may want to review these [instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/) provided at GitHub.
+Please consider what personal information you'd like to reveal on your GitHub account. For example, you may want to review these [instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/) provided at GitHub.
 
 
 
