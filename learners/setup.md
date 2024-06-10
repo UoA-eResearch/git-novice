@@ -14,7 +14,7 @@ Follow these instructions for installing Git for various operating systems.
 <summary> Git installation on Windows </summary>
 
 
-1. Download the [Git for Windows installer](https://Gitforwindows.org/).
+1. Download the [Git for Windows installer](https://gitforwindows.org/).
 2. Run the installer and follow the steps below:
    1. Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
    2. From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".
@@ -58,12 +58,12 @@ $ setx HOME "%USERPROFILE%"
 - Your version of MacOS may have come with Git pre-installed, you can check with the command: 
 
 ```bash
-Git version
+git version
 ```
 
 - if Git is installed you should expect to see an output like:
 ```
-Git version 2.45.1
+git version 2.45.1
 ```
 
 
@@ -72,7 +72,7 @@ Git version 2.45.1
 
 - If you do not already have it Homebrew provides an installation script that can be run by typing the following command into the terminal:
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.Githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 - The script explains what it will do and then pauses before it does it.
 
@@ -80,8 +80,15 @@ Git version 2.45.1
 - Once you have Homebrew installed do the following to install Git:
 
 
-1. Open up a terminal window and install Git using the following command: `brew install Git`
-2. verify the installation using `Git version`
+1. Open up a terminal window and install Git using the following command:
+
+```bash
+brew install git
+```
+2. verify the installation using 
+```bash
+git version
+```
 
 
 
@@ -95,15 +102,22 @@ Git version 2.45.1
 - Your version of MacOS may have come with Git pre-installed, you can check with the command: 
 
 ```bash
-Git version
+git version
 ```
 
 - if Git is installed you should expect to see an output like:
 ```
-Git version 2.45.1
+git version 2.45.1
 ```
 
-- If Git is not already available on your machine you can install it via your distro's package manager. For example on Debian/Ubuntu run `sudo apt-get install Git` or for Fedora run `sudo dnf install Git`.
+- If Git is not already available on your machine you can install it via your distro's package manager. For example on Debian/Ubuntu run: 
+```bash
+sudo apt-get install git
+``` 
+or for Fedora run: 
+```bash 
+sudo dnf install git
+```
 
 
 
@@ -126,13 +140,13 @@ $ cd Documents
 
 
 ## Creating a GitHub account
-You will also need an account at [Github.com](https://Github.com/)  Basic GitHub accounts are free. This workshop requires you to create a GitHub account if you don't have one already.
+You will also need an account at [github.com](https://github.com/)  Basic GitHub accounts are free. This workshop requires you to create a GitHub account if you don't have one already.
 
 
-To Create a GitHub account go to [Github.com](https://Github.com/) select *Sign up for GitHub* with the email address you wish to use filled and follow the prompts on screen.
+To Create a GitHub account go to [github.com](https://github.com/) select *Sign up for GitHub* with the email address you wish to use filled and follow the prompts on screen.
 
 
-Please consider what personal information you'd like to reveal on your GitHub account. For example, you may want to review these [instructions for keeping your email address private](https://help.Github.com/articles/keeping-your-email-address-private/) provided at GitHub.
+Please consider what personal information you'd like to reveal on your GitHub account. For example, you may want to review these [instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/) provided at GitHub.
 
 
 
