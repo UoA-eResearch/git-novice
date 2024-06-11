@@ -6,7 +6,7 @@ title: Setup
 ## Installing Git
 
 
-This workshop relies on an installation of Git.
+This workshop relies on an installation of Git and a GitHub account.
 Follow these instructions for installing Git for various operating systems.
 
 ### Windows
