@@ -68,7 +68,7 @@ git version 2.45.1
 
 - if Git is not installed you will be prompted to install it:
 
-!["Install git MacOS](/episodes/fig/mac-install-git.png)
+![Install git MacOS](/episodes/fig/mac-install-git.png)
 
 - click "Install" and wait a few minutes and you should have Git installed.
 
