@@ -515,25 +515,146 @@ Finish
       </p>
       </section><section id="setup"><section id="installing-git"><h2 class="section-heading">Installing Git<a class="anchor" aria-label="anchor" href="#installing-git"></a>
 </h2>
-<hr class="half-width"><p>Since several Carpentries lessons rely on Git, please see <a href="https://carpentries.github.io/workshop-template/#git" class="external-link">this section
-of the workshop template</a> for instructions on installing Git for
-various operating systems.</p>
-<ul><li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">Git
-installation on Windows</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">Git
-installation on MacOS</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/#git" class="external-link">Git
-installation on Linux</a></li>
-</ul></section><section id="preparing-your-working-directory"><h2 class="section-heading">Preparing Your Working Directory<a class="anchor" aria-label="anchor" href="#preparing-your-working-directory"></a>
+<hr class="half-width"><p>This workshop relies on an installation of Git and a GitHub account.
+Follow these instructions for installing Git for various operating
+systems.</p>
+<div class="section level3">
+<h3 id="windows">Windows<a class="anchor" aria-label="anchor" href="#windows"></a></h3>
+<details><summary>
+Git installation on Windows
+</summary><ol style="list-style-type: decimal"><li>Download the <a href="https://gitforwindows.org/" class="external-link">Git for Windows
+installer</a>.</li>
+<li>Run the installer and follow the steps below:
+<ol style="list-style-type: decimal"><li>Click on “Next” four times (two times if you’ve previously installed
+Git). You don’t need to change anything in the Information, location,
+components, and start menu screens.</li>
+<li>From the dropdown menu, “Choosing the default editor used by Git”,
+select “Use the Nano editor by default” (NOTE: you will need to scroll
+up to find it) and click on “Next”.</li>
+<li>On the page that says “Adjusting the name of the initial branch in
+new repositories”, ensure that “Let Git decide” is selected. This will
+ensure the highest level of compatibility for our lessons.</li>
+<li>Ensure that “Git from the command line and also from 3rd-party
+software” is selected and click on “Next”. (If you don’t do this Git
+Bash will not work properly, requiring you to remove the Git Bash
+installation, re-run the installer and to select the “Git from the
+command line and also from 3rd-party software” option).</li>
+<li>Select “Use bundled OpenSSH”.</li>
+<li>Ensure that “Use the native Windows Secure Channel Library” is
+selected and click on “Next”.</li>
+<li>Ensure that “Checkout Windows-style, commit Unix-style line endings”
+is selected and click on “Next”.</li>
+<li>Ensure that “Use Windows’ default console window” is selected and
+click on “Next”.</li>
+<li>Ensure that “Default (fast-forward or merge) is selected and
+click”Next”.</li>
+<li>Ensure that “Git Credential Manager” is selected and click on
+“Next”.</li>
+<li>Ensure that “Enable file system caching” is selected and click on
+“Next”.</li>
+<li>Click on “Install” (Do Not check any boxes on this screen).</li>
+<li>Click on “Finish” or “Next”.</li>
+</ol></li>
+<li>If your “HOME” environment variable is not set (or you don’t know
+what this is):
+<ol style="list-style-type: decimal"><li>Open command prompt (Open Start Menu then type cmd and press
+Enter).</li>
+<li>Type the following line into the command prompt window exactly as
+shown:</li>
+</ol></li>
+</ol><div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> setx HOME <span class="st">"%USERPROFILE%"</span></span></code></pre>
+</div>
+<ol start="3" style="list-style-type: decimal"><li>Press Enter, you should see:
+<code>SUCCESS: Specified value was saved</code>
+</li>
+<li>Quit command prompt by typing <code>exit</code> then pressing
+Enter</li>
+</ol><div class="section level4">
+<h4 id="video-tutorial">Video Tutorial<a class="anchor" aria-label="anchor" href="#video-tutorial"></a></h4>
+<p><a href="https://www.youtube.com/embed/339AEqk9c-8" class="external-link"><img src="https://img.youtube.com/vi/339AEqk9c-8/hqdefault.jpg" alt="video tutorial" class="figure"></a></p>
+
+</div>
+</details></div>
+<div class="section level3">
+<h3 id="macos">MacOS<a class="anchor" aria-label="anchor" href="#macos"></a></h3>
+<details><summary>
+Git installation on MacOS
+</summary><ul><li>Your version of MacOS may have come with Git pre-installed, you can
+check with the command:</li>
+</ul><div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">git</span> version</span></code></pre>
+</div>
+<ul><li>if Git is installed you should expect to see an output like:</li>
+</ul><pre><code>git version 2.45.1</code></pre>
+<ul><li>if Git is not installed you will be prompted to install it:</li>
+</ul><figure><img src="../episodes/fig/mac-install-git.png" alt="“Install git MacOS" class="figure mx-auto d-block"><div class="figcaption">“Install git MacOS</div>
+</figure><ul><li><p>click “Install” and wait a few minutes and you should have Git
+installed.</p></li>
+<li><p>You can verify this by running <code>git version</code>
+again.</p></li>
+</ul></details></div>
+<div class="section level3">
+<h3 id="linux">Linux<a class="anchor" aria-label="anchor" href="#linux"></a></h3>
+<details><summary>
+Git installation on Linux
+</summary><ul><li>Your Linux Distribution may have come with Git pre-installed, you
+can check with the command:</li>
+</ul><div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> version</span></code></pre>
+</div>
+<ul><li>if Git is installed you should expect to see an output like:</li>
+</ul><pre><code>git version 2.45.1</code></pre>
+<ul><li>If Git is not already available on your machine you can install it
+via your distro’s package manager.</li>
+</ul><p>For example on Debian/Ubuntu run:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git</span></code></pre>
+</div>
+<p>or for Fedora run:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">sudo</span> dnf install git</span></code></pre>
+</div>
+<p>or for Manjaro/Arch run:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">sudo</span> pacman <span class="at">-S</span> git</span></code></pre>
+</div>
+</details></div>
+</section><section id="preparing-your-working-directory"><h2 class="section-heading">Preparing Your Working Directory<a class="anchor" aria-label="anchor" href="#preparing-your-working-directory"></a>
 </h2>
 <hr class="half-width"><p>We’ll do our work in the <code>Documents</code> folder so make sure
 you change your working directory to it with:</p>
-<div class="codewrapper sourceCode" id="cb1">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> cd</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">$</span> cd Documents</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="ex">$</span> cd</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="ex">$</span> cd Documents</span></code></pre>
 </div>
+</section><section id="creating-a-github-account"><h2 class="section-heading">Creating a GitHub account<a class="anchor" aria-label="anchor" href="#creating-a-github-account"></a>
+</h2>
+<hr class="half-width"><p>You will also need an account at <a href="https://github.com/" class="external-link">github.com</a> Basic GitHub accounts are
+free. This workshop requires you to create a GitHub account if you don’t
+have one already.</p>
+<p>To Create a GitHub account go to <a href="https://github.com/" class="external-link">github.com</a> fill the email address you
+wish to use and select <em>Sign up for GitHub</em> then follow the
+prompts on screen.</p>
+<p>We encourage you to use a <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-strong-password" class="external-link">strong
+password</a> and please consider what personal information you’d like to
+reveal on your GitHub account. For example, you may want to review these
+<a href="https://help.github.com/articles/keeping-your-email-address-private/" class="external-link">instructions
+for keeping your email address private</a> provided at GitHub.</p>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/01-basics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
