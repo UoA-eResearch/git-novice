@@ -99,6 +99,10 @@ or for Fedora run:
 ```bash 
 sudo dnf install git
 ```
+or for Manjaro/Arch run: 
+```bash 
+sudo pacman -S git
+```
 
 
 
