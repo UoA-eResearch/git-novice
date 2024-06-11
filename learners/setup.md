@@ -91,7 +91,9 @@ git version
 git version 2.45.1
 ```
 
-- If Git is not already available on your machine you can install it via your distro's package manager. For example on Debian/Ubuntu run: 
+- If Git is not already available on your machine you can install it via your distro's package manager. 
+
+For example on Debian/Ubuntu run: 
 ```bash
 sudo apt-get install git
 ``` 
@@ -128,10 +130,10 @@ $ cd Documents
 You will also need an account at [github.com](https://github.com/)  Basic GitHub accounts are free. This workshop requires you to create a GitHub account if you don't have one already.
 
 
-To Create a GitHub account go to [github.com](https://github.com/) select *Sign up for GitHub* with the email address you wish to use filled and follow the prompts on screen.
+To Create a GitHub account go to [github.com](https://github.com/) fill the email address you wish to use and select *Sign up for GitHub* then follow the prompts on screen.
 
 
-Please consider what personal information you'd like to reveal on your GitHub account. For example, you may want to review these [instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/) provided at GitHub.
+We encourage you to use a [strong password](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-strong-password) and please consider what personal information you'd like to reveal on your GitHub account. For example, you may want to review these [instructions for keeping your email address private](https://help.github.com/articles/keeping-your-email-address-private/) provided at GitHub.
 
 
 
