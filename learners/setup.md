@@ -55,7 +55,7 @@ $ setx HOME "%USERPROFILE%"
 <details>
 <summary> Git installation on MacOS </summary>
 
-- Your version of MacOS may have come with Git pre-installed, you can check with the command:
+- Your version of MacOS may have come with Git pre-installed. Open the Terminal app, then type the command below and press Enter:
 
 ```bash
 git version
